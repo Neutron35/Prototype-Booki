@@ -1,48 +1,91 @@
-body {
-    font-family: 'Raleway', serif;
+* {
     box-sizing: border-box;
 }
 
-/*
-.container {
-    min-width: 992px;
+body {
+    font-family: 'Raleway', serif;
+    margin-left: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-top: 45px;
+    margin-left: 15px;
+    width: 95.5px;
+    height: 45px;
+}
+
+header h1 img {
     max-width: 100%;
+    max-height: 100%;
 }
 
-.main-header .container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.booki-logo {
+header nav ul {
     margin: 0;
-    margin-left: 25px;
-    margin-top: 30px;
-}
-
-.main-nav {
-    width: 345.5px;
-    margin-right: 78px;
-}
-
-.main-nav-list {
+    padding: 0;
+    width: 320px;
+    margin-right: 22px;
+    font-size: 16px;
     display: flex;
-    justify-content: space-between;
-    padding-left: 0px;
-    margin-top: 0px;
-    font-size: 20px;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
-.main-nav-list a {
+header nav ul li {
+    display: inline;
+    padding-top: 45px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-top: 2px solid transparent;
+}
+
+header nav ul li a {
     text-decoration: none;
+    color: black;
+}
+
+header nav ul li:hover {
+    border-top: 2px solid #0065FC;
+}
+
+header nav ul li:hover a {
     color: #0065FC;
 }
 
-.main-nav-list a:hover {
-    border-top: solid #0065FC;
+#search-filters h2 {
+    font-size: 22px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
-.main-nav li {
-    display: inline;
+#search-filters p {
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#search-bar {
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+#search-button:before {
+    content:"Rechercher";
+}
+
+
+/* Changement de "Rechercher" en icone Loupe pour vue mobile
+#search-button::before {
+    font-family: fontAwesome;
+    content: "\f002";
 }
 */
+
+#filters {
+    margin-top: 9px;
+}
