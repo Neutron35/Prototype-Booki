@@ -1,0 +1,46 @@
+body {
+    font-family: 'Raleway', serif;
+    box-sizing: border-box;
+}
+
+.container {
+    min-width: 992px;
+    max-width: 100%;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booki-logo {
+    margin: 0;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.main-nav {
+    width: 345.5px;
+    margin-right: 78px;
+}
+
+.main-nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.main-nav-list a {
+    text-decoration: none;
+    color: #0065FC;
+}
+
+.main-nav-list a:hover {
+    border-top: solid #0065FC;
+}
+
+.main-nav li {
+    display: inline;
+}
