@@ -16,15 +16,20 @@ h3 {
     font-size: 15px;
 }
 
+/* On retire les puces de toutes les listes */
+ul {
+    list-style-type: none;
+}
+
 body {
     font-family: 'Raleway', serif;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 header {
     display: flex;  /* Flexbox */
     justify-content: space-between; /* Pour avoir le logo tout à gauche et le nav tout à droite */
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* Resize le logo */
@@ -41,7 +46,6 @@ header nav ul {
     padding: 0;
     width: 320px;
     font-size: 16px;
-    list-style-type: none;  /* On enlève les puces */
     display: flex;
     justify-content: space-around;  /* Chaque élément de la liste est réparti équitablement. Un espace est appliqué à chaque extrémité. */
     align-items: baseline; /* On aligne en bas */
@@ -67,6 +71,8 @@ header nav ul li:hover a {
 
 main {
     margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* "Trouvez votre hébergement..." */
@@ -91,7 +97,6 @@ main {
     margin-top: 22px;
     margin-bottom: 30px;
     display: flex;
-    justify-content: space-between;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
 }
@@ -371,6 +376,7 @@ main {
     justify-content: space-between;
     align-items: center;
 }
+
 /* Pour chaque encadré blanc de chaque card populaire */
 .all-popular a {
     width: 344px;
@@ -397,6 +403,7 @@ main {
     border-radius: 20px 0 0 20px;
     object-fit: cover;
     padding: 5px;
+    flex-shrink: 0;
 }
 
 /* Pour chaque légende de card populaire */
@@ -416,19 +423,22 @@ main {
     margin-top: 37px;
 }
 
+/* Section Activités à Marseille */
 .activities {
     height: 492px;
     width: 100%;
 }
 
+/* "Activités à Marseille" */
 .activities h2 {
     margin-top: 50px;
     font-size: 21px;
 }
 
+/* Div avec les cards activités */
 .all-activities {
     width: 100%;
-    height: 366px;
+    height: 400px;
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -436,6 +446,7 @@ main {
     justify-content: space-between;
 }
 
+/* Pour chaque encadré blanc de chaque card activité */
 .all-activities a {
     width: 302px;
     height: 100%;
@@ -444,51 +455,100 @@ main {
     box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 }
 
+/* Pour l'encadré de la 2eme card */
 .all-activities a:nth-child(2) {
-    height: 189px;
+    height: 53%;
 }
 
-.all-activities a:nth-child(2) img {
-    height: 144px;
-}
-
+/* Pour l'encadré de la 3eme card */
 .all-activities a:nth-child(3) {
-    height: 132px;
+    height: 37%;
 }
 
-.all-activities a:nth-child(3) img {
-    height: 77px;
-}
-
+/* Pour l'encadré de la 5eme card */
 .all-activities a:nth-child(5) {
-    height: 156px;
+    height: 44%;
 }
 
-.all-activities a:nth-child(5) img {
-    height: 111px;
-}
-
+/* Pour l'encadré de la 6eme card */
 .all-activities a:nth-child(6) {
-    height: 156px;
+    height: 47%;
 }
 
+/* Pour l'image de la 2eme card */
+.all-activities a:nth-child(2) img {
+    height: 76%;
+}
+
+/* Pour l'image de la 3eme card */
+.all-activities a:nth-child(3) img {
+    height: 76%;
+}
+
+/* Pour l'image de la 5eme card */
+.all-activities a:nth-child(5) img {
+    height: 76%;
+}
+
+/* Pour l'image de la 6eme card */
 .all-activities a:nth-child(6) img {
-    height: 122px;
+    height: 76%;
 }
 
+/* Pour chaque card activité */
 .activity {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Pour chaque image de card activité */
 .activity img {
     width: 100%;
-    height: 311px;
+    flex-grow: 1;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
+/* Pour chaque légende de card activité */
 .activity figcaption {
     margin-left: 16px;
     margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* || Footer */
+footer {
+    height: 230px;
+    background-color: #F2F2F2;
+    display: flex;
+    padding-left: 50px;
+}
+
+footer div {
+    margin-top: 47px;
+    margin-bottom: 52px;
+    font-size: 15px;
+}
+
+/* Tout le contenu de chaque div */
+footer div * {
+    margin-bottom: 18px;
+}
+
+/* Titre de liste */
+footer > div p {
+    margin-bottom: 22px;
+    font-weight: bold;
+}
+
+/* Espacement entre A propos et Nos Hébergements */
+.about {
+    margin-right: 228px;
+}
+
+/* Espacement entre Nos Hébergements et Assistance */
+.our-lodgings {
+    margin-right: 292px;
 }
