@@ -1,70 +1,61 @@
 /* On initialise box-sizing sur tout le document */
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
-/* 
-   On enlève la décoration de tous les liens (également quand ils sont sélectionnés et/ou actifs)
-   On met la police en noir
-*/
+/* Tous les liens (également quand ils sont sélectionnés et/ou actifs) */
 a, a:focus, a:active {
-    text-decoration: none;
+    text-decoration: none;  /* On enlève la décoration */
     color: black;
 }
 
-/* On indique la police utilisée et la marge gauche sur tout le body */
+/* Pour chaque titre de card */
+h3 {
+    font-size: 15px;
+}
+
 body {
     font-family: 'Raleway', serif;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
-/* Flexbox sur le header afin d'avoir le logo tout à gauche et le nav tout à droite */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: flex;  /* Flexbox */
+    justify-content: space-between; /* Pour avoir le logo tout à gauche et le nav tout à droite */
 }
 
-/* Resize le logo (pas sûr de l'utilisation de la balise h1, à voir) */
-header h1 {
+/* Resize le logo */
+header img {
     margin-top: 45px;
     margin-left: 15px;
     width: 95.5px;
     height: 45px;
 }
 
-/* L'image utilise 100% de la taille définie au-dessus */
-header h1 img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-/* Flexbox sur la liste, alignement vertical bas, dimensions, on enlève les puces de la liste */
+/* Liste dans le nav */
 header nav ul {
     margin: 0;
     padding: 0;
     width: 320px;
-    margin-right: 22px;
     font-size: 16px;
+    list-style-type: none;  /* On enlève les puces */
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    list-style-type: none;
+    justify-content: space-around;  /* Chaque élément de la liste est réparti équitablement. Un espace est appliqué à chaque extrémité. */
+    align-items: baseline; /* On aligne en bas */
 }
 
-/* 
-   Padding (left et right) pour espacer un peu
-   padding-top pour nous permettre d'avoir la bordure en haut
-   Bordure transparente pour éviter le décalage du texte au survol
-*/
-
+/* On espace Hébergements et Activités */
 header nav ul li {
-    padding-top: 45px;
+    padding-top: 45px;  /* Permet d'avoir la bordure tout en haut */
     padding-left: 22px;
     padding-right: 22px;
-    border-top: 2px solid transparent;
+    border-top: 2px solid transparent;  /* Evite le décalage du texte lors du hover */
 }
 
-/* La bordure définie au-dessus devient bleu quand la souris passe sur le li */
+/* Bordure devient bleu quand la souris passe sur le li */
 header nav ul li:hover {
     border-top: 2px solid #0065FC;
 }
@@ -74,32 +65,73 @@ header nav ul li:hover a {
     color: #0065FC;
 }
 
-/* Taille police et marges pour "Trouvez votre hébergement..." */
-#search-filters h2 {
-    font-size: 22px;
-    margin-top: 8px;
+main {
+    margin-top: 30px;
+}
+
+/* "Trouvez votre hébergement..." */
+.search-filters h2 {
+    font-size: 21px;
+    margin-top: 12px;
     margin-bottom: 8px;
 }
 
-/* Taille police et marges pour "En plein centre ville..." */
-#search-filters p {
+/* "En plein centre ville..." */
+.search-filters h4 {
     font-size: 16px;
+    font-weight: normal;
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
 /* Flexbox et marges pour tous les éléments de la barre de recherche */
-#search-bar {
-    display: flex;
+.search-bar {
+    height: 46px;
+    width: 414px;
     margin-top: 22px;
-    margin-bottom: 22px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+/* On définit la largeur de la div contenant l'icone location */
+.fa-location-dot {
+    display: flex;
+    width: 50px;
+    background-color: #F2F2F2;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+}
+
+/* Champ de recherche */
+.search {
+    flex-grow: 1;
+    height: 100%;
+    border: 0px;
+    padding-left: 16px; /* On se décale un peu de la gauche */
+    font-weight: bold;
+}
+
+.search-button {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    width: 128px;
+    border-top-right-radius: 20px 20px; /* On arrondit l'angle supérieur droit */
+    border-bottom-right-radius: 20px 20px;  /* On arrondit l'angle inférieur droit */
+    border: 0px solid;
+    background-color: #0065FC;
 }
 
 /* 
    On insère "Rechercher" dans le bouton de recherche
    Nécessaire pour pouvoir changer le texte en icone en version mobile
 */
-#search-button:before {
+.search-button:before {
     content:"Rechercher";
 }
 
@@ -111,7 +143,352 @@ header nav ul li:hover a {
 }
 */
 
-/* Marge haute pour la div filtres */
-#filters {
-    margin-top: 9px;
+/* Div Filtres + nombre de résultats */
+.filters-results {
+    height: 112px;
+    width: 929px;
+    margin-left: 9px;
+    display: flex;
+    flex-wrap: wrap;    /* Permettre à la phrase de revenir à la ligne */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* "Filtres" */
+.filters-results span {
+    font-weight: bold;  /* "Filtres" en gras */
+    font-size: 17px;
+}
+
+/* Pour chaque filtre */
+.filters {
+    height: 50px;
+    border-radius: 100px 100px 100px 100px; /* On arrondit les coins */
+    background-color: white;
+    color: black;
+    border: 2px solid #d9d9d9;
+    border-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    padding-right: 24px;    /* Décalage de la droite pour le texte */
+    font-weight: bold;
+}
+
+/* Logo de chaque filtre */
+.filters .fa-solid {
+    color: #0065FC;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    border-radius: 100px 100px 100px 100px; /* Cercle */
+}
+
+/* Quand le souris passe sur le filtre */
+.filters:hover {
+    background-color: #0065FC;  /* On met le fond en bleu */
+    color: white;   /* On passe le texte en blanc */
+}
+
+/* Quand la souris passe sur le filtre */
+.filters:hover .fa-solid {
+    color: #0065FC; /* On laisse l'icone en bleu */
+}
+
+/* Intitulé filtre */
+.filters span {
+    margin-left: 10px;
+}
+
+/* Dimensions de la div avec logo + phrase */
+.results {
+    display: flex;
+    height: 24px;
+    font-size: 16px;
+    margin-top: 38px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-info {
+    font-size: 12px;
+}
+
+/* Phrase nombre de résultats */
+.results p {
+    margin-left: 10px;
+}
+
+/* Icône i */
+.results .fa-solid {
+    width: 24px;
+    height: 24px;
+    border-radius: 100px 100px 100px 100px; /* Cercle */
+    border: 1px solid #d9d9d9;
+    color: #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Div hébergements et populaires */
+.lodgings-popular {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+/* Section Hébergements à Marseille */
+.lodgings {
+    width: 880px;
+    height: 590px;
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px; /* Arrondi bordure */
+    padding-left: 42px;
+    padding-right: 40px;
+}
+
+/* Titre Hébergements à Marseille */
+.lodgings h2 {
+    font-size: 21px;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+/* Div avec les cards hébergement*/
+.all-lodgings {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Pour chaque encadré blanc de chaque card hébergement */
+.all-lodgings a {
+    width: 246px;
+    height: 199px;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
+}
+
+/* Pour chaque card hébergement */
+.lodging {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Pour chaque miniature de card hébergement */
+.lodging img {
+    height: 114px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    padding: 5px;
+}
+
+/* Pour chaque légende de card hébergement */
+.lodging figcaption {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 5px;
+}
+
+/* Pour chaque prix d'hébergement */
+.price {
+    font-size: 13px;
+    margin: 0px;
+    margin-top: 7px;
+}
+
+/* Quand un prix est bas */
+.hot-price {
+    font-weight: bold;
+}
+
+/* Pour chaque note */
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    margin-top: 10px;
+    width: 68px;
+    font-size: 12px;
+    color: #0065FC;
+}
+
+/* Pour chaque étoile "vide" */
+.empty-star {
+    color: #d9d9d9;
+}
+
+/* "Afficher plus" */
+.show-more {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/* Section Les plus populaires */
+.most-popular {
+    width: 420px;
+    height: 590px;
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 20px 20px; /* Arrondi bordure */
+    padding-left: 42px;
+    padding-right: 40px;
+}
+
+/* "Les plus populaires" */
+.most-popular h2 {
+    display: inline-block;
+    margin: 0px;
+    margin-top: 32px;
+    font-size: 21px;
+    width: 60%;
+}
+
+/* Etoile "Les plus populaires" */
+.most-popular-star {
+    float: right;
+    font-size: 20px;
+    margin-top: 32px;
+}
+
+/* Div avec les cards populaires */
+.all-popular {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Pour chaque encadré blanc de chaque card populaire */
+.all-popular a {
+    width: 344px;
+    height: 140px;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
+}
+
+/* Pour chaque card populaire */
+.popular {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/* Pour chaque miniature populaire */
+.popular img {
+    width: 127px;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+/* Pour chaque légende de card populaire */
+.popular figcaption {
+    margin-left: 20px;
+    margin-right: 53px;
+    margin-top: 16px;
+}
+
+/* Pour chaque prix populaire */
+.popular .price {
+    margin-top: 10px;
+}
+
+/* Pour chaque note populaire */
+.popular .rating {
+    margin-top: 37px;
+}
+
+.activities {
+    height: 492px;
+    width: 100%;
+}
+
+.activities h2 {
+    margin-top: 50px;
+    font-size: 21px;
+}
+
+.all-activities {
+    width: 100%;
+    height: 366px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.all-activities a {
+    width: 302px;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
+}
+
+.all-activities a:nth-child(2) {
+    height: 189px;
+}
+
+.all-activities a:nth-child(2) img {
+    height: 144px;
+}
+
+.all-activities a:nth-child(3) {
+    height: 132px;
+}
+
+.all-activities a:nth-child(3) img {
+    height: 77px;
+}
+
+.all-activities a:nth-child(5) {
+    height: 156px;
+}
+
+.all-activities a:nth-child(5) img {
+    height: 111px;
+}
+
+.all-activities a:nth-child(6) {
+    height: 156px;
+}
+
+.all-activities a:nth-child(6) img {
+    height: 122px;
+}
+
+.activity {
+    width: 100%;
+    height: 100%;
+}
+
+.activity img {
+    width: 100%;
+    height: 311px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.activity figcaption {
+    margin-left: 16px;
+    margin-top: 16px;
 }
