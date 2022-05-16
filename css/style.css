@@ -1,14 +1,26 @@
-/* On initialise box-sizing sur tout le document */
+/* || STYLE GENERAL */
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
-/* Tous les liens (également quand ils sont sélectionnés et/ou actifs) */
 a, a:focus, a:active {
     text-decoration: none;  /* On enlève la décoration */
     color: black;
+}
+
+/* "Trouvez votre hébergement..." */
+h1 {
+    font-size: 21px;
+    margin-top: 12px;
+}
+
+/* "Hébergements à Marseille", "Les plus populaires" et "Activités à Marseille" */
+h2 {
+    font-size: 21px;
+
 }
 
 /* Pour chaque titre de card */
@@ -16,7 +28,6 @@ h3 {
     font-size: 15px;
 }
 
-/* On retire les puces de toutes les listes */
 ul {
     list-style-type: none;
 }
@@ -25,14 +36,44 @@ body {
     font-family: 'Raleway', serif;
 }
 
+/* Pour chaque étoile "vide" */
+.empty-star {
+    color: #d9d9d9;
+}
+
+/* Prix hébergement */
+.price {
+    font-size: 13px;
+    margin: 0px;
+    margin-top: 7px;
+}
+
+/* Quand un prix est bas */
+.hot-price {
+    font-weight: bold;
+}
+
+/* Note étoiles */
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    margin-top: 10px;
+    width: 68px;
+    font-size: 12px;
+    color: #0065FC;
+}
+
+/* || HEADER */
+
 header {
-    display: flex;  /* Flexbox */
+    display: flex;
     justify-content: space-between; /* Pour avoir le logo tout à gauche et le nav tout à droite */
     margin-left: 50px;
     margin-right: 50px;
 }
 
-/* Resize le logo */
+/* Logo */
 header img {
     margin-top: 45px;
     margin-left: 15px;
@@ -40,7 +81,6 @@ header img {
     height: 45px;
 }
 
-/* Liste dans le nav */
 header nav ul {
     margin: 0;
     padding: 0;
@@ -51,7 +91,6 @@ header nav ul {
     align-items: baseline; /* On aligne en bas */
 }
 
-/* On espace Hébergements et Activités */
 header nav ul li {
     padding-top: 45px;  /* Permet d'avoir la bordure tout en haut */
     padding-left: 22px;
@@ -69,39 +108,34 @@ header nav ul li:hover a {
     color: #0065FC;
 }
 
+
+/* || MAIN */
 main {
-    margin-top: 30px;
+    margin-top: 32px;
+    margin-bottom: 25px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-/* "Trouvez votre hébergement..." */
-.search-filters h2 {
-    font-size: 21px;
-    margin-top: 12px;
-    margin-bottom: 8px;
-}
-
 /* "En plein centre ville..." */
-.search-filters h4 {
+.search-filters p {
     font-size: 16px;
     font-weight: normal;
-    margin-top: 8px;
-    margin-bottom: 8px;
 }
 
-/* Flexbox et marges pour tous les éléments de la barre de recherche */
+
+/* || BARRE DE RECHERCHE */
+
 .search-bar {
-    height: 46px;
+    height: 50px;
     width: 414px;
-    margin-top: 22px;
+    margin-top: 18px;
     margin-bottom: 30px;
     display: flex;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
 }
 
-/* On définit la largeur de la div contenant l'icone location */
 .fa-location-dot {
     display: flex;
     width: 50px;
@@ -148,7 +182,9 @@ main {
 }
 */
 
-/* Div Filtres + nombre de résultats */
+
+/* || FILTRES ET RESULTATS */
+
 .filters-results {
     height: 112px;
     width: 929px;
@@ -165,7 +201,7 @@ main {
     font-size: 17px;
 }
 
-/* Pour chaque filtre */
+/* Chaque filtre */
 .filters {
     height: 50px;
     border-radius: 100px 100px 100px 100px; /* On arrondit les coins */
@@ -181,7 +217,7 @@ main {
     font-weight: bold;
 }
 
-/* Logo de chaque filtre */
+/* Logo filtre */
 .filters .fa-solid {
     color: #0065FC;
     display: flex;
@@ -193,13 +229,11 @@ main {
     border-radius: 100px 100px 100px 100px; /* Cercle */
 }
 
-/* Quand le souris passe sur le filtre */
 .filters:hover {
-    background-color: #0065FC;  /* On met le fond en bleu */
-    color: white;   /* On passe le texte en blanc */
+    background-color: #0065FC;
+    color: white;
 }
 
-/* Quand la souris passe sur le filtre */
 .filters:hover .fa-solid {
     color: #0065FC; /* On laisse l'icone en bleu */
 }
@@ -221,15 +255,6 @@ main {
 
 .fa-info {
     font-size: 12px;
-}
-
-/* Phrase nombre de résultats */
-.results p {
-    margin-left: 10px;
-}
-
-/* Icône i */
-.results .fa-solid {
     width: 24px;
     height: 24px;
     border-radius: 100px 100px 100px 100px; /* Cercle */
@@ -240,58 +265,57 @@ main {
     align-items: center;
 }
 
+/* Phrase nombre de résultats */
+.results p {
+    margin-left: 10px;
+}
+
 /* Div hébergements et populaires */
 .lodgings-popular {
     display: flex;
     justify-content: space-between;
     margin-top: 36px;
+    height: 610px;
 }
 
-/* Section Hébergements à Marseille */
+
+/* || HEBERGEMENTS MARSEILLE */
+
 .lodgings {
     width: 880px;
-    height: 590px;
     background-color: #F2F2F2;
     border-radius: 20px 20px 20px 20px; /* Arrondi bordure */
     padding-left: 42px;
     padding-right: 40px;
-}
-
-/* Titre Hébergements à Marseille */
-.lodgings h2 {
-    font-size: 21px;
-    margin-top: 32px;
-    margin-bottom: 0;
-}
-
-/* Div avec les cards hébergement*/
-.all-lodgings {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
-/* Pour chaque encadré blanc de chaque card hébergement */
-.all-lodgings a {
+/* "Hébergements à Marseille" */
+.lodgings h2 {
+    margin-top: 32px;
+    width: 100%;
+    height: 25px;
+}
+
+/* Encadré blanc card hébergement */
+.lodgings a {
     width: 246px;
     height: 199px;
     background-color: white;
-    margin-top: 15px;
-    margin-bottom: 15px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 }
 
-/* Pour chaque card hébergement */
+/* Card hébergement */
 .lodging {
     margin: 0;
     width: 100%;
     height: 100%;
 }
 
-/* Pour chaque miniature de card hébergement */
+/* Miniature de card hébergement */
 .lodging img {
     height: 114px;
     width: 100%;
@@ -300,56 +324,32 @@ main {
     padding: 5px;
 }
 
-/* Pour chaque légende de card hébergement */
+/* Légende de card hébergement */
 .lodging figcaption {
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 5px;
 }
 
-/* Pour chaque prix d'hébergement */
-.price {
-    font-size: 13px;
-    margin: 0px;
-    margin-top: 7px;
-}
-
-/* Quand un prix est bas */
-.hot-price {
-    font-weight: bold;
-}
-
-/* Pour chaque note */
-.rating {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px;
-    margin-top: 10px;
-    width: 68px;
-    font-size: 12px;
-    color: #0065FC;
-}
-
-/* Pour chaque étoile "vide" */
-.empty-star {
-    color: #d9d9d9;
-}
-
 /* "Afficher plus" */
 .show-more {
     font-size: 18px;
     font-weight: bold;
-    margin-top: 25px;
+    width: 100%;
 }
 
-/* Section Les plus populaires */
+
+/* || LES PLUS POPULAIRES */
+
 .most-popular {
     width: 420px;
-    height: 590px;
     background-color: #F2F2F2;
     border-radius: 20px 20px 20px 20px; /* Arrondi bordure */
     padding-left: 42px;
     padding-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* "Les plus populaires" */
@@ -357,7 +357,6 @@ main {
     display: inline-block;
     margin: 0px;
     margin-top: 32px;
-    font-size: 21px;
     width: 60%;
 }
 
@@ -368,17 +367,8 @@ main {
     margin-top: 32px;
 }
 
-/* Div avec les cards populaires */
-.all-popular {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Pour chaque encadré blanc de chaque card populaire */
-.all-popular a {
+/* Encadré blanc card populaire */
+.most-popular a {
     width: 344px;
     height: 140px;
     background-color: white;
@@ -388,7 +378,7 @@ main {
     box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 }
 
-/* Pour chaque card populaire */
+/* Card populaire */
 .popular {
     margin: 0;
     width: 100%;
@@ -396,7 +386,7 @@ main {
     display: flex;
 }
 
-/* Pour chaque miniature populaire */
+/* Miniature card populaire */
 .popular img {
     width: 127px;
     height: 100%;
@@ -406,24 +396,26 @@ main {
     flex-shrink: 0;
 }
 
-/* Pour chaque légende de card populaire */
+/* Légende card populaire */
 .popular figcaption {
     margin-left: 20px;
     margin-right: 53px;
     margin-top: 16px;
 }
 
-/* Pour chaque prix populaire */
+/* Prix populaire */
 .popular .price {
     margin-top: 10px;
 }
 
-/* Pour chaque note populaire */
+/* Note populaire */
 .popular .rating {
     margin-top: 37px;
 }
 
-/* Section Activités à Marseille */
+
+/* || ACTIVITES MARSEILLE */
+
 .activities {
     height: 492px;
     width: 100%;
@@ -432,7 +424,6 @@ main {
 /* "Activités à Marseille" */
 .activities h2 {
     margin-top: 50px;
-    font-size: 21px;
 }
 
 /* Div avec les cards activités */
@@ -446,7 +437,7 @@ main {
     justify-content: space-between;
 }
 
-/* Pour chaque encadré blanc de chaque card activité */
+/* Encadré blanc card activité */
 .all-activities a {
     width: 302px;
     height: 100%;
@@ -455,47 +446,47 @@ main {
     box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 }
 
-/* Pour l'encadré de la 2eme card */
+/* Encadré 2eme card */
 .all-activities a:nth-child(2) {
     height: 53%;
 }
 
-/* Pour l'encadré de la 3eme card */
+/* Encadré 3eme card */
 .all-activities a:nth-child(3) {
     height: 37%;
 }
 
-/* Pour l'encadré de la 5eme card */
+/* Encadré 5eme card */
 .all-activities a:nth-child(5) {
     height: 44%;
 }
 
-/* Pour l'encadré de la 6eme card */
+/* Encadré 6eme card */
 .all-activities a:nth-child(6) {
     height: 47%;
 }
 
-/* Pour l'image de la 2eme card */
+/* Miniature 2eme card */
 .all-activities a:nth-child(2) img {
     height: 76%;
 }
 
-/* Pour l'image de la 3eme card */
+/* Miniature 3eme card */
 .all-activities a:nth-child(3) img {
     height: 76%;
 }
 
-/* Pour l'image de la 5eme card */
+/* Miniature 5eme card */
 .all-activities a:nth-child(5) img {
     height: 76%;
 }
 
-/* Pour l'image de la 6eme card */
+/* Miniature 6eme card */
 .all-activities a:nth-child(6) img {
     height: 76%;
 }
 
-/* Pour chaque card activité */
+/* Card activité */
 .activity {
     width: 100%;
     height: 100%;
@@ -503,7 +494,7 @@ main {
     flex-direction: column;
 }
 
-/* Pour chaque image de card activité */
+/* Miniature card activité */
 .activity img {
     width: 100%;
     flex-grow: 1;
@@ -518,7 +509,9 @@ main {
     margin-bottom: 16px;
 }
 
+
 /* || Footer */
+
 footer {
     height: 230px;
     background-color: #F2F2F2;
@@ -551,4 +544,19 @@ footer > div p {
 /* Espacement entre Nos Hébergements et Assistance */
 .our-lodgings {
     margin-right: 292px;
+}
+
+
+
+/* || TABLETTE */
+@media screen and (max-width: 992px)
+{
+
+}
+
+
+/* || MOBILE */
+@media screen and (max-width: 768px)
+{
+    
 }
