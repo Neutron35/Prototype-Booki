@@ -25,7 +25,7 @@ h2 {
 
 /* Pour chaque titre de card */
 h3 {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 ul {
@@ -187,11 +187,11 @@ main {
 
 .filters-results {
     height: 112px;
-    width: 929px;
+    max-width: 929px;
     margin-left: 9px;
+    margin-right: 9px;
     display: flex;
     flex-wrap: wrap;    /* Permettre à la phrase de revenir à la ligne */
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -213,7 +213,8 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    padding-right: 24px;    /* Décalage de la droite pour le texte */
+    padding-right: 2%;    /* Décalage de la droite pour le texte */
+    margin-left: 2%;
     font-weight: bold;
 }
 
@@ -282,11 +283,12 @@ main {
 /* || HEBERGEMENTS MARSEILLE */
 
 .lodgings {
-    width: 880px;
+    width: 80%;
     background-color: #F2F2F2;
     border-radius: 20px 20px 20px 20px; /* Arrondi bordure */
-    padding-left: 42px;
-    padding-right: 40px;
+    padding-top: 32px;
+    padding-left: 3%;
+    padding-right: 3%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -294,14 +296,13 @@ main {
 
 /* "Hébergements à Marseille" */
 .lodgings h2 {
-    margin-top: 32px;
     width: 100%;
     height: 25px;
 }
 
 /* Encadré blanc card hébergement */
 .lodgings a {
-    width: 246px;
+    width: 31%;
     height: 199px;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
@@ -313,22 +314,25 @@ main {
     margin: 0;
     width: 100%;
     height: 100%;
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    */
 }
 
 /* Miniature de card hébergement */
 .lodging img {
-    height: 114px;
+    height: 125px;
     width: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     padding: 5px;
 }
 
-/* Légende de card hébergement */
 .lodging figcaption {
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 5px;
+    margin-bottom: 2%;
+    margin-left: 6%;
 }
 
 /* "Afficher plus" */
@@ -342,11 +346,12 @@ main {
 /* || LES PLUS POPULAIRES */
 
 .most-popular {
-    width: 420px;
+    width: 40%;
     background-color: #F2F2F2;
     border-radius: 20px 20px 20px 20px; /* Arrondi bordure */
-    padding-left: 42px;
-    padding-right: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 3%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -357,7 +362,6 @@ main {
     display: inline-block;
     margin: 0px;
     margin-top: 32px;
-    width: 60%;
 }
 
 /* Etoile "Les plus populaires" */
@@ -398,9 +402,11 @@ main {
 
 /* Légende card populaire */
 .popular figcaption {
-    margin-left: 20px;
-    margin-right: 53px;
-    margin-top: 16px;
+    margin-top: 20px;
+    margin-left: 6%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Prix populaire */
@@ -412,7 +418,6 @@ main {
 .popular .rating {
     margin-top: 37px;
 }
-
 
 /* || ACTIVITES MARSEILLE */
 
