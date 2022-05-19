@@ -61,6 +61,9 @@ body {
     color: #0065FC;
 }
 
+.fa-star {
+    font-size: 11px;
+}
 
 /* || HEADER */
 
@@ -315,13 +318,6 @@ main {
 
 /* Miniature de card hébergement */
 .lodging img {
-    /*
-    flex-grow: 1;
-    max-height: 110px;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    */
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0 0;
@@ -329,7 +325,6 @@ main {
 }
 
 .lodging figcaption {
-    /*margin: 0 0 3% 6%;*/
     padding: 0 0 0 4%;
     display: flex;
     flex-direction: column;
@@ -390,16 +385,7 @@ main {
 
 /* Encadré blanc card populaire */
 .popular-list a {
-    /*
-    max-width: 344px;
-    max-height: 150px;
-    background-color: #ffffff;
-    margin: 15px 0 15px 0;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
-    margin: 0 0 11% 0;
-    */
-    height: 135px;
+    margin: 0 0 8% 0;
     padding: 5px;
     background-color: #ffffff;
     border-radius: 20px 20px 20px 20px;
@@ -408,29 +394,17 @@ main {
 
 /* Card populaire */
 .popular {
-    /*
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    */
     display: flex;
     justify-content: space-between;
 }
 
 .popular-image {
     width: 120px;
+    height: 130px;
 }
 
 /* Miniature card populaire */
 .popular img {
-    /*
-    max-width: 127px;
-    height: 100%;
-    border-radius: 20px 0 0 20px;
-    object-fit: cover;
-    padding: 5px;
-    flex-grow: 1;
-    */
     width: 100%;
     height: 100%;
     border-radius: 20px 0 0 20px;
@@ -439,47 +413,31 @@ main {
 
 /* Légende card populaire */
 .popular figcaption {
-    /*margin: 5% 10% 0 6%;*/
-    /*
     flex: 1;
-    */
     padding: 0 0 0 4%;
     display: flex;
     flex-direction: column;
-    /*
-    justify-content: space-between;
-    flex: 1;
-    */
+    justify-content: flex-end;
 }
 
 .popular h3 {
-    /*
     width: 85%;
     padding-top: 4%;
-    */
 }
 
 /* Prix populaire */
 .popular .price {
-    /*
     padding-top: 5%;
     flex-grow: 1;
-    */
 }
 
 /* Note populaire */
 .popular .rating {
-    /*
     padding: 3% 0 3% 0;
-    */
 }
 
 
 /* || ACTIVITES MARSEILLE */
-
-#activities {
-    width: 100%;
-}
 
 /* "Activités à Marseille" */
 #activities h2 {
@@ -488,9 +446,6 @@ main {
 
 /* Div avec les cards activités */
 .activities-list {
-    /*
-    width: 100%;
-    */
     height: 420px;
     margin-top: 25px;
     display: flex;
@@ -576,22 +531,24 @@ main {
 footer {
     flex-shrink: 0;
     background-color: #F2F2F2;
-    display: flex;
-    padding: 0 50px 0 50px;
 }
 
-footer div {
-    margin: 47px 0 52px 0;
-    font-size: 15px;
+.footer-list {
+    width: 93%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    padding: 3% 2% 4% 2%;
 }
 
 /* Tout le contenu de chaque div */
-footer div * {
-    margin-bottom: 18px;
+footer li {
+    margin-bottom: 14px;
+    font-size: 15px;
 }
 
 /* Titre de liste */
-footer > div p {
+footer p {
+    font-size: 17px;
     margin-bottom: 22px;
     font-weight: bold;
 }
