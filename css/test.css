@@ -2,8 +2,8 @@
 
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 a, a:focus, a:active {
@@ -14,7 +14,6 @@ a, a:focus, a:active {
 /* "Trouvez votre hébergement..." */
 h1 {
     font-size: 21px;
-    margin-top: 12px;
 }
 
 /* "Hébergements à Marseille", "Les plus populaires" et "Activités à Marseille" */
@@ -34,6 +33,8 @@ ul {
 
 body {
     font-family: 'Raleway', serif;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Pour chaque étoile "vide" */
@@ -44,7 +45,6 @@ body {
 /* Prix hébergement */
 .price {
     font-size: 13px;
-    margin: 7px 0 0px 0;
 }
 
 /* Quand un prix est bas */
@@ -56,7 +56,6 @@ body {
 .rating {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0 0 0;
     width: 68px;
     font-size: 12px;
     color: #0065FC;
@@ -68,27 +67,27 @@ body {
 header {
     display: flex;
     justify-content: space-between; /* Pour avoir le logo tout à gauche et le nav tout à droite */
-    margin: 0 50px 0 50px;
+    width: 93%;
+    margin: 0 auto 0 auto;
 }
 
 /* Logo */
 header img {
-    margin: 45px 0 0 45px;
+    margin: 45px 0 0 3%;
     width: 95.5px;
     height: 45px;
 }
 
-header nav ul {
+header ul {
     margin: 0;
     padding: 0;
-    width: 320px;
     font-size: 16px;
     display: flex;
     justify-content: space-around;  /* Chaque élément de la liste est réparti équitablement. Un espace est appliqué à chaque extrémité. */
     align-items: baseline; /* On aligne en bas */
 }
 
-header nav ul li {
+header li {
     padding: 45px 22px 0px 22px;    /* Permet d'avoir la bordure tout en haut */
     border-top: 2px solid transparent;  /* Evite le décalage du texte lors du hover */
 }
@@ -106,7 +105,9 @@ header li:hover a {
 
 /* || MAIN */
 main {
-    margin: 32px 50px 25px 50px;
+    flex: 1 0 auto;
+    width: 93%;
+    margin: 2% auto 4% auto;
 }
 
 /* "En plein centre ville..." */
@@ -119,9 +120,7 @@ main {
 /* || BARRE DE RECHERCHE */
 
 .search-bar {
-    height: 50px;
-    width: 414px;
-    margin: 18px 0 30px 0;
+    margin: 1% 0 0 0;
     display: flex;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
@@ -129,6 +128,7 @@ main {
 
 .fa-location-dot {
     display: flex;
+    height: 50px;
     width: 50px;
     background-color: #F2F2F2;
     justify-content: center;
@@ -139,8 +139,8 @@ main {
 
 /* Champ de recherche */
 .search {
-    flex-grow: 1;
-    height: 100%;
+    width: 236px;
+    height: 50px;
     border: 0px;
     padding-left: 16px; /* On se décale un peu de la gauche */
     font-weight: bold;
@@ -150,7 +150,7 @@ main {
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
-    width: 128px;
+    width: 130px;
     border-top-right-radius: 20px 20px; /* On arrondit l'angle supérieur droit */
     border-bottom-right-radius: 20px 20px;  /* On arrondit l'angle inférieur droit */
     border: 0px solid;
@@ -179,21 +179,24 @@ main {
 .filters-results {
     height: 112px;
     max-width: 929px;
-    margin: 0 9px 0 9px;
-    display: flex;
-    flex-wrap: wrap;    /* Permettre à la phrase de revenir à la ligne */
+    margin: 0 0 0 1%;
+}
+
+.filters-list {
+    display: flex;    /* Permettre à la phrase de revenir à la ligne */
+    flex-wrap: wrap;
     align-items: center;
+    margin: 2% 0 0 9px;
 }
 
 /* "Filtres" */
-.filters-results span {
+.filters-list span {
     font-weight: bold;  /* "Filtres" en gras */
     font-size: 17px;
 }
 
 /* Chaque filtre */
 .filters {
-    height: 50px;
     border-radius: 100px 100px 100px 100px; /* On arrondit les coins */
     background-color: #ffffff;
     color: #000000;
@@ -202,8 +205,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2% 0 0;  /* Décalage de la droite pour le texte */
-    margin-left: 2%;
+    margin: 5px 0 5px 30px;
     font-weight: bold;
 }
 
@@ -212,7 +214,8 @@ main {
     color: #0065FC;
     display: flex;
     width: 50px;
-    height: 50px;
+    height: 45px;
+    font-size: 18px;
     justify-content: center;
     align-items: center;
     background-color: #DEEBFF;
@@ -230,16 +233,15 @@ main {
 
 /* Intitulé filtre */
 .filters span {
-    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 
 /* Dimensions de la div avec logo + phrase */
 .results {
     display: flex;
-    height: 24px;
     font-size: 16px;
-    margin-top: 38px;
-    justify-content: space-between;
+    margin-top: 3%;
     align-items: center;
 }
 
@@ -271,27 +273,29 @@ main {
 /* || HEBERGEMENTS MARSEILLE */
 
 #lodgings {
-    max-width: 80%;
+    width: 65%;
     background-color: #F2F2F2;
     border-radius: 20px 20px 20px 20px; /* Arrondi bordure */
     padding: 0 3% 0 3%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 /* "Hébergements à Marseille" */
 #lodgings h2 {
     width: 100%;
-    margin-top: 32px;
-    align-self: center;
+    margin: 35px 0 7px 0;
+}
+
+.lodging-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* Encadré blanc card hébergement */
-#lodgings a {
+.lodging-list a {
+    margin: 2% 0 2% 0;
+    padding: 5px;
     width: 31%;
-    min-height: 29%;
-    max-height: 34%;
     background-color: #ffffff;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
@@ -300,28 +304,48 @@ main {
 /* Card hébergement */
 .lodging {
     margin: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.lodging-image {
+    height: 110px;
 }
 
 /* Miniature de card hébergement */
 .lodging img {
-    max-height: 125px;
+    /*
+    flex-grow: 1;
+    max-height: 110px;
     width: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    padding: 5px;
-    flex-grow: 1;
+    */
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
 .lodging figcaption {
-    /*margin: 0 0 2% 6%;*/
-    margin-left: 6%;
+    /*margin: 0 0 3% 6%;*/
+    padding: 0 0 0 4%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.lodging h3 {
+    padding-top: 4%;
+}
+
+.lodging .price {
+    padding: 1% 0 0 0;
+}
+
+.lodging .rating {
+    padding: 3% 0 3% 0;
 }
 
 /* "Afficher plus" */
@@ -329,79 +353,125 @@ main {
     font-size: 16px;
     font-weight: bold;
     width: 100%;
+    margin: 3% 0 5% 0;
 }
 
 
 /* || LES PLUS POPULAIRES */
 
 .most-popular {
-    max-width: 36%;
+    width: 31%;
+    flex-shrink: 2;
     background-color: #F2F2F2;
     border-radius: 20px 20px 20px 20px; /* Arrondi bordure */
     padding: 0 3% 0 3%;
-    margin-left: 3%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 /* "Les plus populaires" */
 .most-popular h2 {
     display: inline-block;
-    margin: 3% 0 0 0;
+    margin: 35px 0 7px 0;
 }
 
 /* Etoile "Les plus populaires" */
 .most-popular-star {
     float: right;
     font-size: 20px;
-    margin-top: 3%;
+    margin: 35px 0 7px 0;
+}
+
+.popular-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5%;
 }
 
 /* Encadré blanc card populaire */
-.most-popular a {
-    width: 85%;
-    max-height: 25%;
+.popular-list a {
+    /*
+    max-width: 344px;
+    max-height: 150px;
     background-color: #ffffff;
     margin: 15px 0 15px 0;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
+    margin: 0 0 11% 0;
+    */
+    height: 135px;
+    padding: 5px;
+    background-color: #ffffff;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 }
 
 /* Card populaire */
 .popular {
+    /*
     margin: 0;
     width: 100%;
     height: 100%;
+    */
     display: flex;
+    justify-content: space-between;
+}
+
+.popular-image {
+    width: 120px;
 }
 
 /* Miniature card populaire */
 .popular img {
+    /*
     max-width: 127px;
     height: 100%;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
     padding: 5px;
     flex-grow: 1;
+    */
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
 }
 
 /* Légende card populaire */
 .popular figcaption {
     /*margin: 5% 10% 0 6%;*/
+    /*
     flex: 1;
+    */
+    padding: 0 0 0 4%;
     display: flex;
     flex-direction: column;
+    /*
+    justify-content: space-between;
+    flex: 1;
+    */
+}
+
+.popular h3 {
+    /*
+    width: 85%;
+    padding-top: 4%;
+    */
 }
 
 /* Prix populaire */
 .popular .price {
-    margin-top: 10px;
+    /*
+    padding-top: 5%;
+    flex-grow: 1;
+    */
 }
 
 /* Note populaire */
 .popular .rating {
-    margin-top: 37px;
+    /*
+    padding: 3% 0 3% 0;
+    */
 }
 
 
@@ -417,19 +487,22 @@ main {
 }
 
 /* Div avec les cards activités */
-.all-activities {
+.activities-list {
+    /*
     width: 100%;
-    height: 400px;
+    */
+    height: 420px;
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* Encadré blanc card activité */
-.all-activities a {
-    width: 302px;
+.activities-list a {
+    width: 22%;
     height: 100%;
     background-color: #ffffff;
     border-radius: 20px 20px 20px 20px;
@@ -437,48 +510,47 @@ main {
 }
 
 /* Encadré 2eme card */
-.all-activities a:nth-child(2) {
+.activities-list a:nth-child(2) {
     height: 53%;
 }
 
 /* Encadré 3eme card */
-.all-activities a:nth-child(3) {
+.activities-list a:nth-child(3) {
     height: 37%;
 }
 
 /* Encadré 5eme card */
-.all-activities a:nth-child(5) {
+.activities-list a:nth-child(5) {
     height: 44%;
 }
 
 /* Encadré 6eme card */
-.all-activities a:nth-child(6) {
+.activities-list a:nth-child(6) {
     height: 47%;
 }
 
 /* Miniature 2eme card */
-.all-activities a:nth-child(2) img {
+.activities-list a:nth-child(2) img {
     height: 76%;
 }
 
 /* Miniature 3eme card */
-.all-activities a:nth-child(3) img {
+.activities-list a:nth-child(3) img {
     height: 76%;
 }
 
 /* Miniature 5eme card */
-.all-activities a:nth-child(5) img {
+.activities-list a:nth-child(5) img {
     height: 76%;
 }
 
 /* Miniature 6eme card */
-.all-activities a:nth-child(6) img {
+.activities-list a:nth-child(6) img {
     height: 76%;
 }
 
 /* Card activité */
 .activity {
-    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -487,6 +559,7 @@ main {
 /* Miniature card activité */
 .activity img {
     width: 100%;
+    height: 400px;
     flex-grow: 1;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -494,14 +567,14 @@ main {
 
 /* Pour chaque légende de card activité */
 .activity figcaption {
-    margin: 16px 0 16px 16px;
+    margin: 5% 0 5% 5%;
 }
 
 
 /* || Footer */
 
 footer {
-    height: 230px;
+    flex-shrink: 0;
     background-color: #F2F2F2;
     display: flex;
     padding: 0 50px 0 50px;
@@ -534,26 +607,27 @@ footer > div p {
 }
 
 
-/* || TABLETTE */
-@media screen and (max-width: 992px)
+/* || L PC (992px - 1199px) */
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+/* || TABLETTE PAYSAGE (768px - 991px) */
+@media only screen and (max-width: 992px)
 {
 
 }
 
 
-/* || MOBILE */
-@media screen and (max-width: 768px)
+/* || TABLETTE PORTRAIT & L MOBILE (767px - 600px) */
+@media only screen and (max-width: 768px)
 {
     
 }
 
-/* Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {...} */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...} */
+
+/* || S MOBILE (599px & moins) */
+@media only screen and (max-width: 600px) {
+
+}
