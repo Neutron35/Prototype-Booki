@@ -561,3 +561,255 @@ footer p {
 .our-lodgings {
     margin: 0 292px 0 0;
 }
+
+
+/* || PC L (992px - 1199px) */
+@media only screen and (max-width: 1199px) {
+
+/* || STYLE GENERAL */
+
+/* "Trouvez votre hébergement..." */
+h1 {
+    font-size: 19px;
+}
+
+/* "Hébergements à Marseille", "Les plus populaires" et "Activités à Marseille" */
+h2 {
+    font-size: 18px;
+
+}
+
+/* Pour chaque titre de card */
+h3 {
+    font-size: 12px;
+}
+
+/* Prix hébergement */
+.price {
+    font-size: 11px;
+}
+
+/* Note étoiles */
+.rating {
+    width: 48px;
+    font-size: 10px;
+}
+
+.fa-star {
+    font-size: 9px;
+}
+
+/* || HEADER */
+
+/* Logo */
+header img {
+    width: 67px;
+    height: 32px;
+    margin: 31px 0 0 3%;
+}
+
+header ul {
+    font-size: 14px;
+}
+
+header li {
+    padding: 32px 15px 0px 15px;    /* Permet d'avoir la bordure tout en haut */
+}
+
+
+/* || MAIN */
+
+/* "En plein centre ville..." */
+.search-filters p {
+    font-size: 14px;
+}
+
+
+/* || BARRE DE RECHERCHE */
+
+.fa-location-dot {
+    height: 35px;
+    width: 35px;
+}
+
+/* Champ de recherche */
+.search {
+    width: 166px;
+    height: 35px;
+    padding: 0 0 0 11px; /* On se décale un peu de la gauche */
+}
+
+.search-button {
+    width: 91px;
+    font-size: 14px;
+}
+
+
+/* || FILTRES ET RESULTATS */
+
+.filters-results {
+    height: 78px;
+    max-width: 651px;
+}
+
+.filters-list {
+    margin: 2% 0 0 6px;
+}
+
+/* "Filtres" */
+.filters-list span {
+    font-size: 15px;
+}
+
+/* Chaque filtre */
+.filters {
+    margin: 4px 0 4px 21px;
+}
+
+/* Logo filtre */
+.filters .fa-solid {
+    width: 35px;
+    height: 32px;
+    font-size: 16px;
+}
+
+/* Intitulé filtre */
+.filters span {
+    padding: 0 14px 0 7px;
+}
+
+/* Dimensions de la div avec logo + phrase */
+.results {
+    font-size: 14px;
+}
+
+.fa-info {
+    width: 17px;
+    height: 17px;
+    font-size: 10px;
+}
+
+/* Phrase nombre de résultats */
+.results p {
+    margin: 0 0 0 7px;
+}
+
+/* Div hébergements et populaires */
+.lodgings-popular {
+    margin: 25px 0 0 0;
+}
+
+
+/* || HEBERGEMENTS MARSEILLE */
+
+/* "Hébergements à Marseille" */
+#lodgings h2 {
+    margin: 25px 0 5px 0;
+}
+
+/* Encadré blanc card hébergement */
+.lodging-list a {
+    padding: 4px;
+}
+
+.lodging-image {
+    height: 77px;
+}
+
+/* Miniature de card hébergement */
+
+/* "Afficher plus" */
+.show-more {
+    font-size: 14px;
+}
+
+
+/* || LES PLUS POPULAIRES */
+
+/* "Les plus populaires" */
+.most-popular h2 {
+    margin: 25px 0 5px 0;
+}
+
+/* Etoile "Les plus populaires" */
+.most-popular-star {
+    margin: 25px 0 5px 0;
+    font-size: 18px;
+}
+
+/* Encadré blanc card populaire */
+.popular-list a {
+    padding: 4px;
+}
+
+.popular-image {
+    width: 84px;
+    height: 91px;
+}
+
+
+/* || ACTIVITES MARSEILLE */
+
+/* "Activités à Marseille" */
+#activities h2 {
+    margin: 35px 0 0 0;
+}
+
+/* Div avec les cards activités */
+.activities-list {
+    height: 294px;
+    margin: 18px 0 0 0;
+}
+
+/* Miniature card activité */
+.activity img {
+    height: 280px;
+}
+
+
+/* || Footer */
+
+/* Tout le contenu de chaque div */
+footer li {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+}
+
+/* Titre de liste */
+footer p {
+    margin: 0 0 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Espacement entre A propos et Nos Hébergements */
+.about {
+    margin: 0 160px 0 0;
+}
+
+/* Espacement entre Nos Hébergements et Assistance */
+.our-lodgings {
+    margin: 0 204px 0 0;
+}
+
+
+}
+
+/* || TABLETTE PAYSAGE (768px - 991px) */
+@media only screen and (max-width: 992px)
+{
+
+}
+
+
+/* || TABLETTE PORTRAIT & L MOBILE (767px - 600px) */
+@media only screen and (max-width: 768px)
+{
+    
+}
+
+
+/* || MOBILE S (599px & moins) */
+@media only screen and (max-width: 600px) {
+
+}
