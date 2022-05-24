@@ -219,7 +219,7 @@ main {
     background-color: #DEEBFF;
     border-radius: 100px 100px 100px 100px; /* Cercle */
     color: #0065FC;
-    font-size: 18px;
+    font-size: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -445,7 +445,7 @@ main {
 
 /* Div avec les cards activités */
 .activities-list {
-    height: 420px;
+    height: 446px;
     margin: 25px 0 0 0;
     display: flex;
     flex-wrap: wrap;
@@ -516,7 +516,6 @@ main {
     height: 400px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    flex-grow: 1;
 }
 
 /* Pour chaque légende de card activité */

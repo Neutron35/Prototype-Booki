@@ -232,7 +232,7 @@ main {
     background-color: #DEEBFF;
     border-radius: 100px 100px 100px 100px; /* Cercle */
     color: #0065FC;
-    font-size: 14px;
+    font-size: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,8 +249,8 @@ main {
 
 /* Intitulé filtre */
 .filters span {
-    padding: 0 15px 0 8px;
-    font-size: 14px;
+    padding: 0 10px 0 5px;
+    font-size: 17px;
 }
 
 /* Dimensions de la div avec logo + phrase */
