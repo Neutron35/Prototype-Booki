@@ -53,6 +53,7 @@ body {
     font-size: 11px;
 }
 
+
 /* || HEADER */
 
 header {
@@ -65,7 +66,7 @@ header {
 
 /* Logo */
 header img {
-    width: 95px;
+    width: 95.5px;
     height: 45px;
     margin: 10px 0 0 12%;
 }
@@ -133,8 +134,7 @@ main {
 .fa-location-dot {
     height: 45px;
     width: 45px;
-    border-top-left-radius: 15px 15px;
-    border-bottom-left-radius: 15px 15px;
+    border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
     font-size: 16px;
     display: flex;
@@ -145,8 +145,8 @@ main {
 
 /* Champ de recherche */
 .search {
-    height: 45px;
     min-width: 180px;
+    height: 45px;
     border: 0px;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
@@ -156,9 +156,6 @@ main {
 }
 
 .search-button {
-    /*width: 60px;*/
-    /*border-top-right-radius: 20px 20px;*/ /* On arrondit l'angle supérieur droit */
-    /*border-bottom-right-radius: 20px 20px;*/  /* On arrondit l'angle inférieur droit */
     width: 45px;
     margin: 0 0 0 0;
     border-radius: 15px 15px 15px 15px;
@@ -170,19 +167,10 @@ main {
     flex-shrink: 0;
 }
 
-/* Changement de "Rechercher" en icone Loupe pour vue mobile */
 .search-button:before {
     font-family: fontAwesome;
     content: "\f002";
 }
-
-
-/* Changement de "Rechercher" en icone Loupe pour vue mobile
-#search-button::before {
-    font-family: fontAwesome;
-    content: "\f002";
-}
-*/
 
 
 /* || FILTRES ET RESULTATS */
@@ -294,6 +282,7 @@ main {
     order: 1;
 }
 
+
 /* || HEBERGEMENTS MARSEILLE */
 
 #lodgings {
@@ -322,7 +311,7 @@ main {
 .lodging-list a {
     width: 100%;
     max-width: 282px;
-    margin: 0 0 5% 0;
+    margin: 0 0 4% 0;
     padding: 5px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
@@ -413,7 +402,7 @@ main {
 .popular-list a {
     width: 100%;
     max-width: 282px;
-    margin: 0 0 4% 0;
+    margin: 0 0 3% 0;
     padding: 5px;
     border-radius: 20px 20px 20px 20px;
     background-color: #ffffff;
@@ -492,7 +481,7 @@ main {
     width: 100%;
     max-width: 282px;
     height: 100%;
-    margin: 0 0 8% 0;
+    margin: 0 0 7% 0;
     border-radius: 30px 30px 30px 30px;
     background-color: #ffffff;
     box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;

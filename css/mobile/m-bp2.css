@@ -53,49 +53,51 @@ body {
     font-size: 11px;
 }
 
+
 /* || HEADER */
 
 header {
-    width: 100%;
-    margin: 0 0 0 0;
-    flex-direction: column;
+    width: 93%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between; /* Pour avoir le logo tout à gauche et le nav tout à droite */
-    align-items: center;
+    align-items: initial;
 }
 
 /* Logo */
 header img {
-    width: 95px;
+    width: 95.5px;
     height: 45px;
-    margin: 10px 0 0 12%;
+    margin: 45px 0 0 6%;
 }
 
 nav {
-    width: 100%;
-    margin: 30px 0 0 0;
+    width: initial;
+    margin: 0 0 0 0;
 }
 
 header ul {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    text-align: center;
+    text-align: initial;
     display: flex;
-    justify-content: initial;  /* Chaque élément de la liste est réparti équitablement. Un espace est appliqué à chaque extrémité. */
-    align-items: initial; /* On aligne en bas */
+    justify-content: space-around;  /* Chaque élément de la liste est réparti équitablement. Un espace est appliqué à chaque extrémité. */
+    align-items: baseline; /* On aligne en bas */
 }
 
 header li {
-    width: 50%;
-    padding: 0 0 10px 0;    /* Permet d'avoir la bordure tout en haut */
-    border-top: 0;  /* Evite le décalage du texte lors du hover */
-    border-bottom: 4px solid #F2F2F2;
+    width: initial;
+    padding: 45px 22px 0px 22px;    /* Permet d'avoir la bordure tout en haut */
+    border-top: 2px solid transparent;  /* Evite le décalage du texte lors du hover */
+    border-bottom: initial;
 }
 
 /* Bordure devient bleu quand la souris passe sur le li */
 header li:hover {
-    border-top: 0;
-    border-bottom: 4px solid #0065FC;
+    border-top: 2px solid #0065FC;
+    border-bottom: initial;
 }
 
 /* Hébergements et Activités deviennent bleu au passage de la souris */
@@ -133,8 +135,7 @@ main {
 .fa-location-dot {
     height: 45px;
     width: 45px;
-    border-top-left-radius: 15px 15px;
-    border-bottom-left-radius: 15px 15px;
+    border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
     font-size: 16px;
     display: flex;
@@ -145,8 +146,8 @@ main {
 
 /* Champ de recherche */
 .search {
-    height: 45px;
     min-width: 180px;
+    height: 45px;
     border: 0px;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
@@ -156,9 +157,6 @@ main {
 }
 
 .search-button {
-    /*width: 60px;*/
-    /*border-top-right-radius: 20px 20px;*/ /* On arrondit l'angle supérieur droit */
-    /*border-bottom-right-radius: 20px 20px;*/  /* On arrondit l'angle inférieur droit */
     width: 130px;
     margin: 0 0 0 0;
     border-radius: 0 20px 20px 0;
@@ -170,18 +168,9 @@ main {
     flex-shrink: 0;
 }
 
-/* Changement de "Rechercher" en icone Loupe pour vue mobile */
 .search-button:before {
     content:"Rechercher";
 }
-
-
-/* Changement de "Rechercher" en icone Loupe pour vue mobile
-#search-button::before {
-    font-family: fontAwesome;
-    content: "\f002";
-}
-*/
 
 
 /* || FILTRES ET RESULTATS */
@@ -293,6 +282,7 @@ main {
     order: 1;
 }
 
+
 /* || HEBERGEMENTS MARSEILLE */
 
 #lodgings {
@@ -321,7 +311,7 @@ main {
 .lodging-list a {
     width: 100%;
     max-width: 282px;
-    margin: 0 0 5% 0;
+    margin: 0 0 3% 0;
     padding: 5px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
@@ -412,7 +402,7 @@ main {
 .popular-list a {
     width: 100%;
     max-width: 282px;
-    margin: 0 0 4% 0;
+    margin: 0 0 3% 0;
     padding: 5px;
     border-radius: 20px 20px 20px 20px;
     background-color: #ffffff;
@@ -491,7 +481,7 @@ main {
     width: 100%;
     max-width: 282px;
     height: 100%;
-    margin: 0 0 8% 0;
+    margin: 0 0 6% 0;
     border-radius: 30px 30px 30px 30px;
     background-color: #ffffff;
     box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
