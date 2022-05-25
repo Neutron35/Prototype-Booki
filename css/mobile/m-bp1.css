@@ -327,7 +327,7 @@ main {
 }
 
 .lodging-image {
-    height: 92px;
+    height: 110px;
 }
 
 /* Miniature de card hébergement */
@@ -401,7 +401,7 @@ main {
 /* Encadré blanc card populaire */
 .popular-list a {
     width: 100%;
-    max-width: 282px;
+    max-width: 334px;
     margin: 0 0 3% 0;
     padding: 5px;
     border-radius: 20px 20px 20px 20px;
@@ -479,7 +479,7 @@ main {
 /* Encadré blanc card activité */
 .activities-list a {
     width: 100%;
-    max-width: 282px;
+    max-width: 294px;
     height: 100%;
     margin: 0 0 7% 0;
     border-radius: 30px 30px 30px 30px;
@@ -537,7 +537,7 @@ main {
 /* Miniature card activité */
 .activity img {
     width: 100%;
-    max-width: 282px;
+    max-width: 294px;
     height: 108px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;

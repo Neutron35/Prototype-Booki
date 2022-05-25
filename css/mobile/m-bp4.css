@@ -402,7 +402,7 @@ main {
 .popular-list a {
     width: 100%;
     max-width: 334px;
-    margin: 0 0 3% 0;
+    margin: 0 0 5% 0;
     padding: 5px;
     border-radius: 20px 20px 20px 20px;
     background-color: #ffffff;
@@ -467,64 +467,70 @@ main {
 
 /* Div avec les cards activités */
 .activities-list {
-    height: initial;
-    margin: 40px 0 0 0;
+    height: 900px;
+    margin: 25px 0 0 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: normal;
+    align-content: space-between;
 }
 
 /* Encadré blanc card activité */
 .activities-list a {
-    width: 100%;
+    width: 49%;
     max-width: 294px;
-    height: 100%;
-    margin: 0 0 6% 0;
-    border-radius: 30px 30px 30px 30px;
+    height: 435px;
+    margin: 0 0 0 0;
+    border-radius: 20px 20px 20px 20px;
     background-color: #ffffff;
     box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 }
 
 /* Encadré 2eme card */
 .activities-list a:nth-child(2) {
-    height: initial;
+    order: 3;
+    height: 26%;
 }
 
 /* Encadré 3eme card */
 .activities-list a:nth-child(3) {
-    height: initial;
+    order: 4;
+    height: 18%;
 }
+
 
 /* Encadré 5eme card */
 .activities-list a:nth-child(5) {
-    height: initial;
+    order: 5;
+    height: 22%;
 }
 
 /* Encadré 6eme card */
 .activities-list a:nth-child(6) {
-    height: initial;
+    order: 6;
+    height: 23%;
 }
 
 /* Miniature 2eme card */
 .activities-list a:nth-child(2) img {
-    height: 108px;
+    height: 76%;
 }
 
 /* Miniature 3eme card */
 .activities-list a:nth-child(3) img {
-    height: 108px;
+    height: 65%;
 }
 
 /* Miniature 5eme card */
 .activities-list a:nth-child(5) img {
-    height: 108px;
+    height: 71%;
 }
 
 /* Miniature 6eme card */
 .activities-list a:nth-child(6) img {
-    height: 108px;
+    height: 73%;
 }
 
 /* Card activité */
@@ -538,15 +544,14 @@ main {
 .activity img {
     width: 100%;
     max-width: 294px;
-    height: 108px;
+    height: 380px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    flex-grow: 1;
 }
 
 /* Pour chaque légende de card activité */
 .activity figcaption {
-    margin: 7% 0 5% 6%;
+    margin: 7% 0 7% 7%;
 }
 
 
@@ -560,9 +565,10 @@ footer {
 .footer-list {
     width: 90%;
     margin: 0 auto 0 auto;
-    padding: 10% 2% 6% 4%;
+    padding: 3% 2% 4% 2%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* Tout le contenu de chaque div */
@@ -580,10 +586,10 @@ footer p {
 
 /* Espacement entre A propos et Nos Hébergements */
 .about {
-    margin: 0 0 35px 0;
+    margin: 0 0 0 0;
 }
 
 /* Espacement entre Nos Hébergements et Assistance */
 .our-lodgings {
-    margin: 0 0 35px 0;
+    margin: 0 0 0 0;
 }
