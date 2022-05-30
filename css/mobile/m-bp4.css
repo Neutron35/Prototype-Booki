@@ -69,7 +69,7 @@ header {
 header img {
     width: 95.5px;
     height: 45px;
-    margin: 45px 0 0 6%;
+    margin: 34px 0 0 6%;
 }
 
 nav {
@@ -467,22 +467,22 @@ main {
 
 /* Div avec les cards activités */
 .activities-list {
-    height: 900px;
+    height: 745px;
     margin: 25px 0 0 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     align-items: normal;
-    align-content: space-between;
+    align-content: center;
 }
 
 /* Encadré blanc card activité */
 .activities-list a {
-    width: 49%;
-    max-width: 294px;
-    height: 435px;
-    margin: 0 0 0 0;
+    width: 40%;
+    max-width: 230px;
+    height: 360px;
+    margin: 0 2% 0 2%;
     border-radius: 20px 20px 20px 20px;
     background-color: #ffffff;
     box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
@@ -491,26 +491,26 @@ main {
 /* Encadré 2eme card */
 .activities-list a:nth-child(2) {
     order: 3;
-    height: 26%;
+    height: 22%;
 }
 
 /* Encadré 3eme card */
 .activities-list a:nth-child(3) {
     order: 4;
-    height: 18%;
+    height: 17%;
 }
 
 
 /* Encadré 5eme card */
 .activities-list a:nth-child(5) {
     order: 5;
-    height: 22%;
+    height: 18%;
 }
 
 /* Encadré 6eme card */
 .activities-list a:nth-child(6) {
     order: 6;
-    height: 23%;
+    height: 20%;
 }
 
 /* Miniature 2eme card */
@@ -544,14 +544,17 @@ main {
 .activity img {
     width: 100%;
     max-width: 294px;
-    height: 380px;
+    height: 320px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 
 /* Pour chaque légende de card activité */
 .activity figcaption {
+    /*
     margin: 7% 0 7% 7%;
+    */
+    margin: auto 0 auto 5%;
 }
 
 
