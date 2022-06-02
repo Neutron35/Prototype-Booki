@@ -9,39 +9,32 @@
 /* || HEADER */
 
 header {
-  width: 100%;
-  margin: 0 0 0 0;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: initial;
 }
 
 /* Logo */
 header img {
-  margin: 10px 0 0 12%;
+  margin: 34px 0 0 6%;
 }
 
 nav {
-  width: 100%;
-  margin: 30px 0 0 0;
+  width: initial;
+  margin: 0 0 0 0;
 }
 
 header ul {
-  text-align: center;
-  justify-content: initial; /* Chaque élément de la liste est réparti équitablement. Un espace est appliqué à chaque extrémité. */
-  align-items: initial; /* On aligne en bas */
+  text-align: initial;
 }
 
 header li {
-  width: 50%;
-  padding: 0 0 10px 0; /* Permet d'avoir la bordure tout en haut */
-  border-top: 0; /* Evite le décalage du texte lors du hover */
-  border-bottom: 4px solid #f2f2f2;
+  width: initial;
+  border-bottom: initial;
 }
 
 /* Bordure devient bleu quand la souris passe sur le li */
 header li:hover {
-  border-top: 0;
-  border-bottom: 4px solid #0065fc;
+  border-bottom: initial;
 }
 
 /* || MAIN */
@@ -148,19 +141,20 @@ main {
 
 .lodging-list {
   margin: 8% 0 0 0;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
 /* Encadré blanc card hébergement */
 .lodging-list a {
-  width: 71%;
-  max-width: 340px;
-  margin: 0 0 4% 0;
+  width: 32%;
+  max-width: 276px;
+  margin: 0 0.5% 4% 0.5%;
 }
 
 .lodging-image {
-  height: 119px;
+  height: 133px;
 }
 
 /* "Afficher plus" */
@@ -189,33 +183,40 @@ main {
 
 .popular-list {
   margin: 6% 0 0 0;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
 /* Encadré blanc card populaire */
 .popular-list a {
-  width: 71%;
-  max-width: 340px;
-  margin: 0 0 3% 0;
+  width: 32%;
+  max-width: 276px;
+  margin: 0 0.5% 3% 0.5%;
+}
+
+/* Card populaire */
+.popular {
+  flex-direction: column;
 }
 
 .popular-image {
-  width: 129px;
-  height: 136px;
+  width: initial;
+  height: 133px;
 }
 
-/* Légende card populaire */
-.popular figcaption {
-  padding: 0 0 0 6%;
+/* Miniature card populaire */
+.popular img {
+  border-radius: 20px 20px 0 0;
 }
 
 .popular h3 {
-  padding: 6% 0 0 0;
+  width: initial;
 }
 
-/* Note populaire */
-.popular .rating {
-  padding: 3% 0 6% 0;
+/* Prix populaire */
+.popular .price {
+  padding: 1% 0 0 0;
 }
 
 /* || ACTIVITES MARSEILLE */
@@ -231,76 +232,80 @@ main {
 
 /* Div avec les cards activités */
 .activities-list {
-  height: initial;
-  margin: 40px 0 0 0;
+  height: 902px;
+  align-items: normal;
+  align-content: center;
 }
 
 /* Encadré blanc card activité */
 .activities-list a {
-  width: 71%;
-  max-width: 340px;
-  margin: 0 0 7% 0;
-  border-radius: 30px 30px 30px 30px;
+  width: 41%;
+  max-width: 312px;
+  height: 442px;
+  margin: 0 1% 0 1%;
 }
 
 /* Encadré 2eme card */
 .activities-list a:nth-child(2) {
-  height: initial;
+  order: 3;
+  height: 22%;
 }
 
 /* Encadré 3eme card */
 .activities-list a:nth-child(3) {
-  height: initial;
+  order: 4;
+  height: 17%;
 }
 
 /* Encadré 5eme card */
 .activities-list a:nth-child(5) {
-  height: initial;
+  order: 5;
+  height: 18%;
 }
 
 /* Encadré 6eme card */
 .activities-list a:nth-child(6) {
-  height: initial;
+  order: 6;
+  height: 20%;
 }
 
 /* Miniature 2eme card */
 .activities-list a:nth-child(2) img {
-  height: 136px;
+  height: 76%;
 }
 
 /* Miniature 3eme card */
 .activities-list a:nth-child(3) img {
-  height: 136px;
+  height: 65%;
 }
 
 /* Miniature 5eme card */
 .activities-list a:nth-child(5) img {
-  height: 136px;
+  height: 71%;
 }
 
 /* Miniature 6eme card */
 .activities-list a:nth-child(6) img {
-  height: 136px;
+  height: 73%;
 }
 
 /* Miniature card activité */
 .activity img {
-  max-width: 340px;
-  height: 136px;
-  flex-grow: 1;
+  max-width: 312px;
+  height: 402px;
 }
 
 /* Pour chaque légende de card activité */
 .activity figcaption {
-  margin: 7% 0 5% 6%;
+  margin: auto 0 auto 5%;
 }
 
 /* || Footer */
 
 .footer-list {
   width: 90%;
-  padding: 10% 2% 6% 4%;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* Tout le contenu de chaque div */
@@ -315,10 +320,10 @@ footer p {
 
 /* Espacement entre A propos et Nos Hébergements */
 .about {
-  margin: 0 0 35px 0;
+  margin: 0 0 0 0;
 }
 
 /* Espacement entre Nos Hébergements et Assistance */
 .our-lodgings {
-  margin: 0 0 35px 0;
+  margin: 0 0 0 0;
 }

@@ -1,72 +1,20 @@
 /* || STYLE GENERAL */
 
-/* "Trouvez votre hébergement..." */
-h1 {
-  font-size: 21px;
-}
-
-/* "Hébergements à Marseille", "Les plus populaires" et "Activités à Marseille" */
-h2 {
-  font-size: 20px;
-}
-
-/* Pour chaque titre de card */
-h3 {
-  font-size: 14px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-body {
-  font-family: "Raleway", serif;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Pour chaque étoile "vide" */
-.empty-star {
-  color: #d9d9d9;
-}
-
-/* Prix hébergement */
-.price {
-  font-size: 13px;
-}
-
-/* Quand un prix est bas */
-.hot-price {
-  font-weight: bold;
-}
-
 /* Note étoiles */
 .rating {
   width: initial;
-  color: #0065fc;
-  display: flex;
   justify-content: initial;
-}
-
-.fa-star {
-  font-size: 11px;
 }
 
 /* || HEADER */
 
 header {
-  width: 93%;
-  margin: 0 auto 0 auto;
-  display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Pour avoir le logo tout à gauche et le nav tout à droite */
   align-items: initial;
 }
 
 /* Logo */
 header img {
-  width: 95.5px;
-  height: 45px;
   margin: 34px 0 0 6%;
 }
 
@@ -76,38 +24,23 @@ nav {
 }
 
 header ul {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
   text-align: initial;
-  display: flex;
-  justify-content: space-around; /* Chaque élément de la liste est réparti équitablement. Un espace est appliqué à chaque extrémité. */
-  align-items: baseline; /* On aligne en bas */
 }
 
 header li {
   width: initial;
-  padding: 45px 22px 0px 22px; /* Permet d'avoir la bordure tout en haut */
-  border-top: 2px solid transparent; /* Evite le décalage du texte lors du hover */
   border-bottom: initial;
 }
 
 /* Bordure devient bleu quand la souris passe sur le li */
 header li:hover {
-  border-top: 2px solid #0065fc;
   border-bottom: initial;
-}
-
-/* Hébergements et Activités deviennent bleu au passage de la souris */
-header li:hover a {
-  color: #0065fc;
 }
 
 /* || MAIN */
 main {
   width: 100%;
   margin: 4% auto 5% auto;
-  flex: 1 0 auto;
 }
 
 .search-filters {
@@ -115,78 +48,32 @@ main {
   margin: 0 auto 0 auto;
 }
 
-/* "En plein centre ville..." */
-.search-filters p {
-  font-size: 16px;
-  font-weight: normal;
-}
-
 /* || BARRE DE RECHERCHE */
 
 .search-bar {
   margin: 30px 0 0 0;
-  display: flex;
 }
 
 .fa-location-dot {
-  height: 50px;
-  width: 50px;
   border-radius: 15px 0 0 15px;
-  background-color: #f2f2f2;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-shrink: 0;
 }
 
 /* Champ de recherche */
 .search {
   min-width: 180px;
-  height: 50px;
-  border: 0px;
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
-  padding: 0 0 0 16px; /* On se décale un peu de la gauche */
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .search-button {
-  width: 130px;
   margin: 0 0 0 0;
   border-radius: 0 20px 20px 0;
-  border: 0px solid;
-  background-color: #0065fc;
-  font-size: 16px;
-  font-weight: bold;
-  color: #ffffff;
   flex-shrink: 0;
-}
-
-.search-button:before {
-  content: "Rechercher";
 }
 
 /* || FILTRES ET RESULTATS */
 
-.filters-results {
-  height: 112px;
-  max-width: 929px;
-  margin: 0 0 0 1%;
-}
-
 .filters-list {
   margin: 30px 0 0 0;
-  display: flex; /* Permettre à la phrase de revenir à la ligne */
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-/* "Filtres" */
-.filters-list span {
-  font-weight: bold; /* "Filtres" en gras */
-  font-size: 17px;
 }
 
 .filters-list span:first-child {
@@ -197,37 +84,12 @@ main {
 /* Chaque filtre */
 .filters {
   margin: 5px 1% 10px 0;
-  border: 2px solid #d9d9d9;
-  border-left: 0px;
-  border-radius: 100px 100px 100px 100px; /* On arrondit les coins */
-  background-color: #ffffff;
-  color: #000000;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* Logo filtre */
 .filters .fa-solid {
   width: 40px;
   height: 40px;
-  background-color: #deebff;
-  border-radius: 100px 100px 100px 100px; /* Cercle */
-  color: #0065fc;
-  font-size: 17px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.filters:hover {
-  background-color: #0065fc;
-  color: #ffffff;
-}
-
-.filters:hover .fa-solid {
-  color: #0065fc; /* On laisse l'icone en bleu */
 }
 
 /* Intitulé filtre */
@@ -239,32 +101,18 @@ main {
 /* Dimensions de la div avec logo + phrase */
 .results {
   margin: 20px 0 0 0;
-  display: flex;
   align-items: initial;
 }
 
 .fa-info {
   width: 20px;
   height: 20px;
-  border-radius: 100px 100px 100px 100px; /* Cercle */
-  border: 1px solid #d9d9d9;
-  font-size: 12px;
-  color: #0065fc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-shrink: 0;
-}
-
-/* Phrase nombre de résultats */
-.results p {
-  margin: 0 0 0 10px;
 }
 
 /* Div hébergements et populaires */
 .lodgings-popular {
   margin: 30px 0 0 0;
-  display: flex;
   flex-direction: column;
   justify-content: initial;
 }
@@ -288,14 +136,11 @@ main {
 
 /* "Hébergements à Marseille" */
 #lodgings h2 {
-  width: 100%;
   margin: 40px 0 7px 0;
 }
 
 .lodging-list {
   margin: 8% 0 0 0;
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -303,61 +148,18 @@ main {
 
 /* Encadré blanc card hébergement */
 .lodging-list a {
-  width: 100%;
-  max-width: 244px;
-  margin: 0 2% 6% 2%;
-  padding: 5px;
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea,
-    0px -4px 6px #eaeaea;
-  background-color: #ffffff;
-}
-
-/* Card hébergement */
-.lodging {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 48%;
+  max-width: 276px;
+  margin: 0 1% 4% 1%;
 }
 
 .lodging-image {
-  height: 110px;
-}
-
-/* Miniature de card hébergement */
-.lodging img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px 20px 0 0;
-  object-fit: cover;
-}
-
-.lodging figcaption {
-  padding: 0 0 0 4%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.lodging h3 {
-  padding: 4% 0 0 0;
-}
-
-.lodging .price {
-  padding: 1% 0 0 0;
-}
-
-.lodging .rating {
-  padding: 3% 0 3% 0;
+  height: 97px;
 }
 
 /* "Afficher plus" */
 .show-more {
-  width: 100%;
   margin: 20px 0 5% 0;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 /* || LES PLUS POPULAIRES */
@@ -366,81 +168,45 @@ main {
   width: initial;
   border-radius: 0; /* Arrondi bordure */
   padding: 0 6% 5% 6%;
-  background-color: #f2f2f2;
   flex-shrink: initial;
 }
 
 /* "Les plus populaires" */
 .most-popular h2 {
   margin: 30px 0 7px 0;
-  display: inline-block;
 }
 
 /* Etoile "Les plus populaires" */
 .most-popular-star {
   margin: 30px 0 7px 0;
-  font-size: 20px;
-  float: right;
 }
 
 .popular-list {
   margin: 6% 0 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
 /* Encadré blanc card populaire */
 .popular-list a {
-  width: 100%;
-  max-width: 334px;
-  margin: 0 0 3% 0;
-  padding: 5px;
-  border-radius: 20px 20px 20px 20px;
-  background-color: #ffffff;
-  box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea,
-    0px -4px 6px #eaeaea;
-}
-
-/* Card populaire */
-.popular {
-  display: flex;
-  justify-content: space-between;
+  width: 48%;
+  max-width: 276px;
+  margin: 0 1% 3% 1%;
 }
 
 .popular-image {
-  width: 120px;
-  height: 130px;
-}
-
-/* Miniature card populaire */
-.popular img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px 0 0 20px;
-  object-fit: cover;
+  width: 105px;
+  height: 111px;
 }
 
 /* Légende card populaire */
 .popular figcaption {
   padding: 0 0 0 6%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex: 1;
 }
 
 .popular h3 {
-  width: 85%;
   padding: 6% 0 0 0;
-}
-
-/* Prix populaire */
-.popular .price {
-  padding: 5% 0 0 0;
-  flex-grow: 1;
 }
 
 /* Note populaire */
@@ -461,115 +227,90 @@ main {
 
 /* Div avec les cards activités */
 .activities-list {
-  height: initial;
-  margin: 40px 0 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  height: 816px;
+  align-items: normal;
+  align-content: center;
 }
 
 /* Encadré blanc card activité */
 .activities-list a {
-  width: 100%;
-  max-width: 294px;
-  height: 100%;
-  margin: 0 0 6% 0;
-  border-radius: 30px 30px 30px 30px;
-  background-color: #ffffff;
-  box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea,
-    0px -4px 6px #eaeaea;
+  width: 48%;
+  max-width: 276px;
+  height: 396px;
+  margin: 0 2% 0 2%;
 }
 
 /* Encadré 2eme card */
 .activities-list a:nth-child(2) {
-  height: initial;
+  order: 3;
+  height: 22%;
 }
 
 /* Encadré 3eme card */
 .activities-list a:nth-child(3) {
-  height: initial;
+  order: 4;
+  height: 17%;
 }
 
 /* Encadré 5eme card */
 .activities-list a:nth-child(5) {
-  height: initial;
+  order: 5;
+  height: 18%;
 }
 
 /* Encadré 6eme card */
 .activities-list a:nth-child(6) {
-  height: initial;
+  order: 6;
+  height: 20%;
 }
 
 /* Miniature 2eme card */
 .activities-list a:nth-child(2) img {
-  height: 108px;
+  height: 76%;
 }
 
 /* Miniature 3eme card */
 .activities-list a:nth-child(3) img {
-  height: 108px;
+  height: 65%;
 }
 
 /* Miniature 5eme card */
 .activities-list a:nth-child(5) img {
-  height: 108px;
+  height: 71%;
 }
 
 /* Miniature 6eme card */
 .activities-list a:nth-child(6) img {
-  height: 108px;
-}
-
-/* Card activité */
-.activity {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  height: 73%;
 }
 
 /* Miniature card activité */
 .activity img {
-  width: 100%;
-  max-width: 294px;
-  height: 108px;
-  border-radius: 20px 20px 0 0;
-  object-fit: cover;
-  flex-grow: 1;
+  max-width: 276px;
+  height: 356px;
 }
 
 /* Pour chaque légende de card activité */
 .activity figcaption {
-  margin: 7% 0 5% 6%;
+  margin: auto 0 auto 5%;
 }
 
 /* || Footer */
 
-footer {
-  background-color: #f2f2f2;
-  flex-shrink: 0;
-}
-
 .footer-list {
   width: 90%;
-  margin: 0 auto 0 auto;
   padding: 10% 2% 6% 4%;
-  display: flex;
   flex-direction: column;
 }
 
 /* Tout le contenu de chaque div */
 footer li {
   margin: 0 0 13px 0;
-  font-size: 15px;
 }
 
 /* Titre de liste */
 footer p {
   margin: 0 0 20px 0;
-  font-size: 17px;
-  font-weight: bold;
 }
 
 /* Espacement entre A propos et Nos Hébergements */
