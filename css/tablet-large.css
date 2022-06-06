@@ -14,6 +14,7 @@ h3 {
 .rating {
   width: initial;
   justify-content: initial;
+  font-size: 10px;
 }
 
 /* || HEADER */
@@ -50,7 +51,7 @@ header li:hover {
 /* || MAIN */
 main {
   width: 100%;
-  margin: 4% auto 50px auto;
+  margin: 4% auto 5% auto;
 }
 
 .search-filters {
@@ -150,7 +151,7 @@ main {
 }
 
 .lodging-list {
-  margin: 20px 0 0 0;
+  margin: 15px 0 0 0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -158,13 +159,9 @@ main {
 
 /* Encadré blanc card hébergement */
 .lodging-list a {
-  width: 48%;
+  width: 32%;
   max-width: 276px;
   margin: 0 5px 12px 5px;
-}
-
-.lodging-image {
-  aspect-ratio: 2.85 / 1;
 }
 
 /* "Afficher plus" */
@@ -200,7 +197,7 @@ main {
 
 /* Encadré blanc card populaire */
 .popular-list a {
-  width: 48%;
+  width: 32%;
   max-width: 276px;
   margin: 0 5px 12px 5px;
 }
@@ -209,17 +206,13 @@ main {
 .popular {
   flex-direction: column;
 }
+
 .popular-image {
   position: relative;
   width: 100%;
   height: initial;
-  aspect-ratio: 2.85 / 1;
+  aspect-ratio: 2.07 / 1;
   border-radius: 15px 15px 0 0;
-}
-
-/* Légende card populaire */
-.popular figcaption {
-  padding: 0 0 0 6%;
 }
 
 .popular h3 {
@@ -227,6 +220,7 @@ main {
   padding: 4% 0 0 0;
 }
 
+/* Prix populaire */
 .popular .price {
   padding: 1% 0 0 0;
 }
@@ -249,16 +243,17 @@ main {
 
 /* Div avec les cards activités */
 .activities-list {
-  max-height: 805px;
+  width: 82%;
+  max-width: 708px;
   margin: 25px auto 0 auto;
-  aspect-ratio: 0.715 / 1;
+  aspect-ratio: 0.71 / 1;
   align-items: center;
 }
 
 /* Encadré blanc card activité */
 .activities-list a {
-  width: calc(48% - 10px);
-  max-width: 266px;
+  width: 46.5%;
+  max-width: 330px;
   height: initial;
 }
 
@@ -292,11 +287,6 @@ main {
   aspect-ratio: 1.44 / 1;
 }
 
-/* Miniature card activité */
-.activity img {
-  max-width: 276px;
-}
-
 /* Pour chaque légende de card activité */
 .activity figcaption {
   margin: auto 0 auto 5%;
@@ -306,8 +296,9 @@ main {
 
 .footer-list {
   width: 90%;
-  padding: 40px 0 0 4%;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 10%;
 }
 
 .footer-list div {

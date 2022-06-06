@@ -25,7 +25,7 @@ h2 {
 
 /* Pour chaque titre de card */
 h3 {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 ul {
@@ -55,11 +55,11 @@ body {
 
 /* Note étoiles */
 .rating {
-  width: 68px;
+  width: initial;
+  font-size: 10px;
   color: #0065fc;
-  font-size: 11px;
   display: flex;
-  justify-content: space-between;
+  justify-content: initial;
 }
 
 /* || HEADER */

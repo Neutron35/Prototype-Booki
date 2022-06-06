@@ -1,15 +1,5 @@
 /* || STYLE GENERAL */
 
-/* Pour chaque titre de card */
-h3 {
-  font-size: 13px;
-}
-
-/* Prix hébergement */
-.price {
-  font-size: 12px;
-}
-
 /* Note étoiles */
 .rating {
   width: initial;
