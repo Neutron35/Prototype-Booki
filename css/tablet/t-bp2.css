@@ -1,5 +1,15 @@
 /* || STYLE GENERAL */
 
+/* Pour chaque titre de card */
+h3 {
+  font-size: 13px;
+}
+
+/* Prix hébergement */
+.price {
+  font-size: 12px;
+}
+
 /* Note étoiles */
 .rating {
   width: initial;
@@ -136,11 +146,11 @@ main {
 
 /* "Hébergements à Marseille" */
 #lodgings h2 {
-  margin: 40px 0 7px 0;
+  margin: 30px 0 7px 0;
 }
 
 .lodging-list {
-  margin: 8% 0 0 0;
+  margin: 15px 0 0 0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -150,16 +160,12 @@ main {
 .lodging-list a {
   width: 32%;
   max-width: 276px;
-  margin: 0 0.5% 4% 0.5%;
-}
-
-.lodging-image {
-  height: 133px;
+  margin: 0 5px 12px 5px;
 }
 
 /* "Afficher plus" */
 .show-more {
-  margin: 20px 0 5% 0;
+  margin: 20px 0 30px 0;
 }
 
 /* || LES PLUS POPULAIRES */
@@ -167,7 +173,7 @@ main {
 .most-popular {
   width: initial;
   border-radius: 0; /* Arrondi bordure */
-  padding: 0 6% 5% 6%;
+  padding: 0 6% 25px 6%;
   flex-shrink: initial;
 }
 
@@ -182,7 +188,7 @@ main {
 }
 
 .popular-list {
-  margin: 6% 0 0 0;
+  margin: 15px 0 0 0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -192,7 +198,7 @@ main {
 .popular-list a {
   width: 32%;
   max-width: 276px;
-  margin: 0 0.5% 3% 0.5%;
+  margin: 0 5px 12px 5px;
 }
 
 /* Card populaire */
@@ -201,22 +207,26 @@ main {
 }
 
 .popular-image {
-  width: initial;
-  height: 133px;
-}
-
-/* Miniature card populaire */
-.popular img {
-  border-radius: 20px 20px 0 0;
+  position: relative;
+  width: 100%;
+  height: initial;
+  aspect-ratio: 2.07 / 1;
+  border-radius: 15px 15px 0 0;
 }
 
 .popular h3 {
   width: initial;
+  padding: 4% 0 0 0;
 }
 
 /* Prix populaire */
 .popular .price {
   padding: 1% 0 0 0;
+}
+
+/* Note populaire */
+.popular .rating {
+  padding: 3% 0 3% 0;
 }
 
 /* || ACTIVITES MARSEILLE */
@@ -232,67 +242,48 @@ main {
 
 /* Div avec les cards activités */
 .activities-list {
-  height: 902px;
-  align-items: normal;
-  align-content: center;
+  width: 82%;
+  max-width: 708px;
+  margin: 25px auto 0 auto;
+  aspect-ratio: 0.71 / 1;
+  align-items: center;
 }
 
 /* Encadré blanc card activité */
 .activities-list a {
-  width: 41%;
-  max-width: 312px;
-  height: 442px;
-  margin: 0 1% 0 1%;
+  width: 46.5%;
+  max-width: 330px;
+  height: initial;
 }
 
 /* Encadré 2eme card */
 .activities-list a:nth-child(2) {
   order: 3;
-  height: 22%;
+  margin-bottom: 1.1%;
+  position: relative;
+  aspect-ratio: 1.28 / 1;
+  align-self: initial;
 }
 
 /* Encadré 3eme card */
 .activities-list a:nth-child(3) {
   order: 4;
-  height: 17%;
+  position: relative;
+  aspect-ratio: 1.84 / 1;
 }
 
 /* Encadré 5eme card */
 .activities-list a:nth-child(5) {
   order: 5;
-  height: 18%;
+  position: relative;
+  aspect-ratio: 1.55 / 1;
 }
 
 /* Encadré 6eme card */
 .activities-list a:nth-child(6) {
   order: 6;
-  height: 20%;
-}
-
-/* Miniature 2eme card */
-.activities-list a:nth-child(2) img {
-  height: 76%;
-}
-
-/* Miniature 3eme card */
-.activities-list a:nth-child(3) img {
-  height: 65%;
-}
-
-/* Miniature 5eme card */
-.activities-list a:nth-child(5) img {
-  height: 71%;
-}
-
-/* Miniature 6eme card */
-.activities-list a:nth-child(6) img {
-  height: 73%;
-}
-
-/* Miniature card activité */
-.activity img {
-  max-width: 312px;
-  height: 402px;
+  position: relative;
+  aspect-ratio: 1.44 / 1;
 }
 
 /* Pour chaque légende de card activité */
@@ -306,24 +297,19 @@ main {
   width: 90%;
   flex-direction: row;
   justify-content: space-between;
+  padding-right: 10%;
+}
+
+.footer-list div {
+  margin-bottom: 30px;
 }
 
 /* Tout le contenu de chaque div */
 footer li {
-  margin: 0 0 13px 0;
+  margin: 0 0 10px 0;
 }
 
 /* Titre de liste */
 footer p {
   margin: 0 0 20px 0;
-}
-
-/* Espacement entre A propos et Nos Hébergements */
-.about {
-  margin: 0 0 0 0;
-}
-
-/* Espacement entre Nos Hébergements et Assistance */
-.our-lodgings {
-  margin: 0 0 0 0;
 }

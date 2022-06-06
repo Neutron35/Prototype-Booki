@@ -1,5 +1,15 @@
 /* || STYLE GENERAL */
 
+/* Pour chaque titre de card */
+h3 {
+  font-size: 13px;
+}
+
+/* Prix hébergement */
+.price {
+  font-size: 12px;
+}
+
 /* Note étoiles */
 .rating {
   width: initial;
@@ -40,7 +50,7 @@ header li:hover {
 /* || MAIN */
 main {
   width: 100%;
-  margin: 4% auto 5% auto;
+  margin: 4% auto 50px auto;
 }
 
 .search-filters {
@@ -136,11 +146,11 @@ main {
 
 /* "Hébergements à Marseille" */
 #lodgings h2 {
-  margin: 40px 0 7px 0;
+  margin: 30px 0 7px 0;
 }
 
 .lodging-list {
-  margin: 8% 0 0 0;
+  margin: 20px 0 0 0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -150,16 +160,16 @@ main {
 .lodging-list a {
   width: 48%;
   max-width: 276px;
-  margin: 0 1% 4% 1%;
+  margin: 0 5px 12px 5px;
 }
 
 .lodging-image {
-  height: 97px;
+  aspect-ratio: 2.85 / 1;
 }
 
 /* "Afficher plus" */
 .show-more {
-  margin: 20px 0 5% 0;
+  margin: 20px 0 30px 0;
 }
 
 /* || LES PLUS POPULAIRES */
@@ -167,7 +177,7 @@ main {
 .most-popular {
   width: initial;
   border-radius: 0; /* Arrondi bordure */
-  padding: 0 6% 5% 6%;
+  padding: 0 6% 25px 6%;
   flex-shrink: initial;
 }
 
@@ -182,7 +192,7 @@ main {
 }
 
 .popular-list {
-  margin: 6% 0 0 0;
+  margin: 15px 0 0 0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -192,12 +202,19 @@ main {
 .popular-list a {
   width: 48%;
   max-width: 276px;
-  margin: 0 1% 3% 1%;
+  margin: 0 5px 12px 5px;
 }
 
+/* Card populaire */
+.popular {
+  flex-direction: column;
+}
 .popular-image {
-  width: 105px;
-  height: 111px;
+  position: relative;
+  width: 100%;
+  height: initial;
+  aspect-ratio: 2.85 / 1;
+  border-radius: 15px 15px 0 0;
 }
 
 /* Légende card populaire */
@@ -206,12 +223,17 @@ main {
 }
 
 .popular h3 {
-  padding: 6% 0 0 0;
+  width: initial;
+  padding: 4% 0 0 0;
+}
+
+.popular .price {
+  padding: 1% 0 0 0;
 }
 
 /* Note populaire */
 .popular .rating {
-  padding: 3% 0 6% 0;
+  padding: 3% 0 3% 0;
 }
 
 /* || ACTIVITES MARSEILLE */
@@ -227,67 +249,52 @@ main {
 
 /* Div avec les cards activités */
 .activities-list {
-  height: 816px;
-  align-items: normal;
-  align-content: center;
+  max-height: 805px;
+  margin: 25px auto 0 auto;
+  aspect-ratio: 0.715 / 1;
+  align-items: center;
 }
 
 /* Encadré blanc card activité */
 .activities-list a {
-  width: 48%;
-  max-width: 276px;
-  height: 396px;
-  margin: 0 2% 0 2%;
+  width: calc(48% - 10px);
+  max-width: 266px;
+  height: initial;
 }
 
 /* Encadré 2eme card */
 .activities-list a:nth-child(2) {
   order: 3;
-  height: 22%;
+  margin-bottom: 1.1%;
+  position: relative;
+  aspect-ratio: 1.28 / 1;
+  align-self: initial;
 }
 
 /* Encadré 3eme card */
 .activities-list a:nth-child(3) {
   order: 4;
-  height: 17%;
+  position: relative;
+  aspect-ratio: 1.84 / 1;
 }
 
 /* Encadré 5eme card */
 .activities-list a:nth-child(5) {
   order: 5;
-  height: 18%;
+  position: relative;
+  aspect-ratio: 1.55 / 1;
 }
 
 /* Encadré 6eme card */
 .activities-list a:nth-child(6) {
   order: 6;
-  height: 20%;
-}
-
-/* Miniature 2eme card */
-.activities-list a:nth-child(2) img {
-  height: 76%;
-}
-
-/* Miniature 3eme card */
-.activities-list a:nth-child(3) img {
-  height: 65%;
-}
-
-/* Miniature 5eme card */
-.activities-list a:nth-child(5) img {
-  height: 71%;
-}
-
-/* Miniature 6eme card */
-.activities-list a:nth-child(6) img {
-  height: 73%;
+  position: relative;
+  aspect-ratio: 1.44 / 1;
 }
 
 /* Miniature card activité */
 .activity img {
   max-width: 276px;
-  height: 356px;
 }
 
 /* Pour chaque légende de card activité */
@@ -299,26 +306,20 @@ main {
 
 .footer-list {
   width: 90%;
-  padding: 10% 2% 6% 4%;
+  padding: 40px 0 0 4%;
   flex-direction: column;
+}
+
+.footer-list div {
+  margin-bottom: 30px;
 }
 
 /* Tout le contenu de chaque div */
 footer li {
-  margin: 0 0 13px 0;
+  margin: 0 0 10px 0;
 }
 
 /* Titre de liste */
 footer p {
   margin: 0 0 20px 0;
-}
-
-/* Espacement entre A propos et Nos Hébergements */
-.about {
-  margin: 0 0 35px 0;
-}
-
-/* Espacement entre Nos Hébergements et Assistance */
-.our-lodgings {
-  margin: 0 0 35px 0;
 }
