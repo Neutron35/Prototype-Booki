@@ -31,6 +31,10 @@
     <!-- En-tête de la page -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vous souhaitez passer des vacances inoubliables, mais vous avez du mal à trouver un hébergement ? Avec Booki, simplifiez-vous la vie ! Profitez de notre moteur de recherche et trouvez le logement qui vous correspond, partout en France."
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link
       rel="stylesheet"
@@ -108,9 +112,14 @@
             type="text"
             class="search"
             name="search"
+            aria-label="Champ de recherche"
             value="Marseille, France"
           />
-          <button class="search-button" type="submit"></button>
+          <button
+            class="search-button"
+            type="submit"
+            aria-label="Rechercher"
+          ></button>
         </form>
         <div class="filters-list">
           <!-- Liste des filtres -->
