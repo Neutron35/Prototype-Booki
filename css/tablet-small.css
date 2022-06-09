@@ -140,6 +140,7 @@ main {
 }
 
 .lodging-list {
+  max-width: 762px;
   margin: 4% auto 0 auto;
   flex-direction: row;
   justify-content: space-around;
@@ -178,6 +179,7 @@ main {
 }
 
 .popular-list {
+  max-width: 762px;
   margin: 4% auto 0 auto;
   flex-direction: row;
   justify-content: space-around;
@@ -240,7 +242,7 @@ main {
   max-width: 762px;
   margin: 25px auto 0 auto;
   aspect-ratio: 0.835 / 1;
-  align-items: center;
+  align-content: space-around;
 }
 
 /* Encadré blanc card activité */
