@@ -2,309 +2,310 @@
 
 /* Note étoiles */
 .rating {
-  width: initial;
-  justify-content: initial;
+	justify-content: initial;
+	width: initial;
 }
 
 /* || HEADER */
 
 header {
-  flex-direction: row;
-  align-items: initial;
+	flex-direction: row;
+	align-items: initial;
 }
 
 /* Logo */
 header img {
-  margin: 34px 0 0 6%;
+	margin: 34px 0 0 6%;
 }
 
 nav {
-  width: initial;
-  margin: 0 0 0 0;
+	margin: 0 0 0 0;
+	width: initial;
 }
 
 header ul {
-  text-align: initial;
+	text-align: initial;
 }
 
 header li {
-  width: initial;
-  border-bottom: initial;
+	border-bottom: initial;
+	width: initial;
 }
 
 /* Bordure devient bleu quand la souris passe sur le li */
 header li:hover {
-  border-bottom: initial;
+	border-bottom: initial;
 }
 
 /* || MAIN */
+
 main {
-  width: 100%;
-  margin: 4% auto 50px auto;
+	margin: 4% auto 50px auto;
+	width: 100%;
 }
 
 .search-filters {
-  width: 90%;
-  margin: 0 auto 0 auto;
+	margin: 0 auto 0 auto;
+	width: 90%;
 }
 
 /* || BARRE DE RECHERCHE */
 
 .search-bar {
-  margin: 30px 0 0 0;
+	margin: 30px 0 0 0;
 }
 
 .fa-location-dot {
-  border-radius: 15px 0 0 15px;
-  flex-shrink: 0;
+	flex-shrink: 0;
+	border-radius: 15px 0 0 15px;
 }
 
 /* Champ de recherche */
 .search {
-  min-width: 180px;
+	min-width: 180px;
 }
 
 .search-button {
-  margin: 0 0 0 0;
-  border-radius: 0 20px 20px 0;
-  flex-shrink: 0;
+	flex-shrink: 0;
+	margin: 0 0 0 0;
+	border-radius: 0 20px 20px 0;
 }
 
 /* || FILTRES ET RESULTATS */
 
 .filters-list {
-  margin: 30px 0 0 0;
+	margin: 30px 0 0 0;
 }
 
 .filters-list span:first-child {
-  width: 100%;
-  margin: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	width: 100%;
 }
 
 /* Chaque filtre */
 .filters {
-  margin: 5px 1% 10px 0;
+	margin: 5px 1% 10px 0;
 }
 
 /* Logo filtre */
 .filters .fa-solid {
-  width: 40px;
-  height: 40px;
+	width: 40px;
+	height: 40px;
 }
 
 /* Intitulé filtre */
 .filters span {
-  padding: 0 10px 0 5px;
-  font-size: 17px;
+	padding: 0 10px 0 5px;
+	font-size: 17px;
 }
 
 /* Dimensions de la div avec logo + phrase */
 .results {
-  margin: 20px 0 0 0;
-  align-items: initial;
+	align-items: initial;
+	margin: 20px 0 0 0;
 }
 
 .fa-info {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
 }
 
 /* Div hébergements et populaires */
 .lodgings-popular {
-  margin: 30px 0 0 0;
-  flex-direction: column;
-  justify-content: initial;
+	flex-direction: column;
+	justify-content: initial;
+	margin: 30px 0 0 0;
 }
 
 .lodgings-popular section:nth-child(1) {
-  order: 2;
+	order: 2;
 }
 
 .lodgings-popular section:nth-child(2) {
-  order: 1;
+	order: 1;
 }
 
 /* || HEBERGEMENTS MARSEILLE */
 
 #lodgings {
-  width: initial;
-  background-color: initial;
-  border-radius: initial; /* Arrondi bordure */
-  padding: 0 6% 0 6%;
+	border-radius: initial;
+	background-color: initial;
+	width: initial;
+	padding: 0 6% 0 6%;
 }
 
 /* "Hébergements à Marseille" */
 #lodgings h2 {
-  margin: 30px 0 7px 0;
+	margin: 30px 0 7px 0;
 }
 
 .lodging-list {
-  max-width: 762px;
-  margin: 4% auto 0 auto;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin: 4% auto 0 auto;
+	max-width: 762px;
 }
 
 /* Encadré blanc card hébergement */
 .lodging-list a {
-  width: 41%;
-  max-width: 312px;
-  margin: 0 1% 5% 1%;
+	margin: 0 1% 5% 1%;
+	width: 41%;
+	max-width: 312px;
 }
 
 /* "Afficher plus" */
 .show-more {
-  margin: 20px 0 30px 0;
+	margin: 20px 0 30px 0;
 }
 
 /* || LES PLUS POPULAIRES */
 
 .most-popular {
-  width: initial;
-  border-radius: 0; /* Arrondi bordure */
-  padding: 0 6% 25px 6%;
-  flex-shrink: initial;
+	flex-shrink: initial;
+	border-radius: 0;
+	width: initial;
+	padding: 0 6% 25px 6%;
 }
 
 /* "Les plus populaires" */
 .most-popular h2 {
-  margin: 30px 0 7px 0;
+	margin: 30px 0 7px 0;
 }
 
 /* Etoile "Les plus populaires" */
 .most-popular-star {
-  margin: 30px 0 7px 0;
+	margin: 30px 0 7px 0;
 }
 
 .popular-list {
-  max-width: 762px;
-  margin: 4% auto 0 auto;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin: 4% auto 0 auto;
+	max-width: 762px;
 }
 
 /* Encadré blanc card populaire */
 .popular-list a {
-  width: 41%;
-  max-width: 312px;
-  margin: 0 1% 5% 1%;
+	margin: 0 1% 5% 1%;
+	width: 41%;
+	max-width: 312px;
 }
 
 /* Card populaire */
 .popular {
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .popular-image {
-  position: relative;
-  width: 100%;
-  height: initial;
-  aspect-ratio: 2.07 / 1;
-  border-radius: 15px 15px 0 0;
+	position: relative;
+	border-radius: 15px 15px 0 0;
+	width: 100%;
+	height: initial;
+	aspect-ratio: 2.07 / 1;
 }
 
 /* Légende card populaire */
 .popular figcaption {
-  padding: 0 0 0 6%;
+	padding: 0 0 0 6%;
 }
 
 .popular h3 {
-  width: initial;
-  padding: 4% 0 0 0;
+	padding: 4% 0 0 0;
+	width: initial;
 }
 
 /* Prix populaire */
 .popular .price {
-  padding: 1% 0 0 0;
+	padding: 1% 0 0 0;
 }
 
 /* Note populaire */
 .popular .rating {
-  padding: 3% 0 3% 0;
+	padding: 3% 0 3% 0;
 }
 
 /* || ACTIVITES MARSEILLE */
 
 #activities {
-  padding: 0 6% 0 6%;
+	padding: 0 6% 0 6%;
 }
 
 /* "Activités à Marseille" */
 #activities h2 {
-  margin: 20px 0 7px 0;
+	margin: 20px 0 7px 0;
 }
 
 /* Div avec les cards activités */
 .activities-list {
-  max-width: 762px;
-  margin: 25px auto 0 auto;
-  aspect-ratio: 0.835 / 1;
-  align-content: space-around;
+	align-content: space-around;
+	margin: 25px auto 0 auto;
+	max-width: 762px;
+	aspect-ratio: 0.835 / 1;
 }
 
 /* Encadré blanc card activité */
 .activities-list a {
-  width: calc(41% - 10px);
-  max-width: 302px;
-  height: initial;
+	width: calc(41% - 10px);
+	max-width: 302px;
+	height: initial;
 }
 
 /* Encadré 2eme card */
 .activities-list a:nth-child(2) {
-  order: 3;
-  margin-bottom: 1.1%;
-  position: relative;
-  aspect-ratio: 1.28 / 1;
+	position: relative;
+	order: 3;
+	margin-bottom: 1.1%;
+	aspect-ratio: 1.28 / 1;
 }
 
 /* Encadré 3eme card */
 .activities-list a:nth-child(3) {
-  order: 4;
-  position: relative;
-  aspect-ratio: 1.84 / 1;
+	position: relative;
+	order: 4;
+	aspect-ratio: 1.84 / 1;
 }
 
 /* Encadré 5eme card */
 .activities-list a:nth-child(5) {
-  order: 5;
-  position: relative;
-  aspect-ratio: 1.55 / 1;
+	position: relative;
+	order: 5;
+	aspect-ratio: 1.55 / 1;
 }
 
 /* Encadré 6eme card */
 .activities-list a:nth-child(6) {
-  order: 6;
-  position: relative;
-  aspect-ratio: 1.44 / 1;
+	position: relative;
+	order: 6;
+	aspect-ratio: 1.44 / 1;
 }
 
 /* Pour chaque légende de card activité */
 .activity figcaption {
-  margin: auto 0 auto 5%;
+	margin: auto 0 auto 5%;
 }
 
 /* || Footer */
 
 .footer-list {
-  width: 90%;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-right: 10%;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-right: 10%;
+	width: 90%;
 }
 
 .footer-list div {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 /* Tout le contenu de chaque div */
 footer li {
-  margin: 0 0 10px 0;
+	margin: 0 0 10px 0;
 }
 
 /* Titre de liste */
 footer p {
-  margin: 0 0 20px 0;
+	margin: 0 0 20px 0;
 }

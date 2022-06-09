@@ -2,17 +2,17 @@
 
 /* Pour chaque titre de card */
 h3 {
-  font-size: 13px;
+	font-size: 13px;
 }
 
 /* Prix hébergement */
 .price {
-  font-size: 12px;
+	font-size: 12px;
 }
 
 /* Note étoiles */
 .rating {
-  width: initial;
-  font-size: 10px;
-  justify-content: initial;
+	justify-content: initial;
+	width: initial;
+	font-size: 10px;
 }

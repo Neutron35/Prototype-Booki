@@ -2,340 +2,345 @@
 
 /* Note étoiles */
 .rating {
-  width: initial;
-  justify-content: initial;
+	justify-content: initial;
+	width: initial;
 }
 
 /* || HEADER */
 
 header {
-  width: 100%;
-  margin: 0 0 0 0;
-  flex-direction: column;
-  align-items: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 0 0 0;
+	width: 100%;
 }
 
 /* Logo */
 header img {
-  margin: 10px 0 0 12%;
+	margin: 10px 0 0 12%;
 }
 
 nav {
-  width: 100%;
-  margin: 30px 0 0 0;
+	margin: 30px 0 0 0;
+	width: 100%;
 }
 
 header ul {
-  text-align: center;
-  justify-content: initial; /* Chaque élément de la liste est réparti équitablement. Un espace est appliqué à chaque extrémité. */
-  align-items: initial; /* On aligne en bas */
+	justify-content: initial;
+	text-align: center;
+	align-items: initial;
 }
 
 header li {
-  width: 50%;
-  padding: 0 0 10px 0; /* Permet d'avoir la bordure tout en haut */
-  border-top: 0; /* Evite le décalage du texte lors du hover */
-  border-bottom: 4px solid #f2f2f2;
+	padding: 0 0 10px 0;
+	width: 50%;
+	/* Permet d'avoir la bordure tout en haut */
+	border-top: 0;
+	/* Evite le décalage du texte lors du hover */
+	border-bottom: 4px solid #f2f2f2;
 }
 
 /* Bordure devient bleu quand la souris passe sur le li */
 header li:hover {
-  border-top: 0;
-  border-bottom: 4px solid #0065fc;
+	border-top: 0;
+	border-bottom: 4px solid #0065fc;
 }
 
 /* || MAIN */
+
 main {
-  width: 100%;
-  margin: 4% auto 5% auto;
+	margin: 4% auto 5% auto;
+	width: 100%;
 }
 
 .search-filters {
-  width: 90%;
-  margin: 0 auto 0 auto;
+	margin: 0 auto 0 auto;
+	width: 90%;
 }
 
 /* || BARRE DE RECHERCHE */
 
 .search-bar {
-  margin: 30px 0 0 0;
+	margin: 30px 0 0 0;
 }
 
 .fa-location-dot {
-  height: 45px;
-  width: 45px;
-  border-radius: 15px 0 0 15px;
-  flex-shrink: 0;
+	flex-shrink: 0;
+	border-radius: 15px 0 0 15px;
+	width: 45px;
+	height: 45px;
 }
 
 /* Champ de recherche */
 .search {
-  min-width: 180px;
-  height: 45px;
+	min-width: 180px;
+	height: 45px;
 }
 
 .search-button {
-  width: 45px;
-  margin: 0 0 0 0;
-  border-radius: 15px 15px 15px 15px;
-  font-weight: initial;
-  flex-shrink: 0;
+	flex-shrink: 0;
+	margin: 0 0 0 0;
+	border-radius: 15px 15px 15px 15px;
+	width: 45px;
+	font-weight: initial;
 }
 
 .search-button:before {
-  font-family: fontAwesome;
-  content: "\f002";
+	font-family: fontAwesome;
+	content: "\f002";
 }
 
 /* || FILTRES ET RESULTATS */
 
 .filters-list {
-  margin: 30px 0 0 0;
+	margin: 30px 0 0 0;
 }
 
 .filters-list span:first-child {
-  width: 100%;
-  margin: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	width: 100%;
 }
 
 /* Chaque filtre */
 .filters {
-  margin: 5px 1% 10px 0;
+	margin: 5px 1% 10px 0;
 }
 
 /* Logo filtre */
 .filters .fa-solid {
-  width: 40px;
-  height: 40px;
+	width: 40px;
+	height: 40px;
 }
 
 /* Intitulé filtre */
 .filters span {
-  padding: 0 10px 0 5px;
-  font-size: 17px;
+	padding: 0 10px 0 5px;
+	font-size: 17px;
 }
 
 /* Dimensions de la div avec logo + phrase */
 .results {
-  margin: 20px 0 0 0;
-  align-items: initial;
+	align-items: initial;
+	margin: 20px 0 0 0;
 }
 
 .fa-info {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
 }
 
 /* Div hébergements et populaires */
 .lodgings-popular {
-  margin: 30px 0 0 0;
-  flex-direction: column;
-  justify-content: initial;
+	flex-direction: column;
+	justify-content: initial;
+	margin: 30px 0 0 0;
 }
 
 .lodgings-popular section:nth-child(1) {
-  order: 2;
+	order: 2;
 }
 
 .lodgings-popular section:nth-child(2) {
-  order: 1;
+	order: 1;
 }
 
 /* || HEBERGEMENTS MARSEILLE */
 
 #lodgings {
-  width: initial;
-  background-color: initial;
-  border-radius: initial; /* Arrondi bordure */
-  padding: 0 6% 0 6%;
+	border-radius: initial;
+	background-color: initial;
+	width: initial;
+	/* Arrondi bordure */
+	padding: 0 6% 0 6%;
 }
 
 /* "Hébergements à Marseille" */
 #lodgings h2 {
-  margin: 30px 0 7px 0;
+	margin: 30px 0 7px 0;
 }
 
 .lodging-list {
-  margin: 15px 0 0 0;
-  flex-direction: column;
-  align-items: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 15px 0 0 0;
 }
 
 /* Encadré blanc card hébergement */
 .lodging-list a {
-  width: 94%;
-  max-width: 300px;
-  margin: 0 0 12px 0;
+	margin: 0 0 12px 0;
+	width: 94%;
+	max-width: 300px;
 }
 
 .lodging-image {
-  aspect-ratio: 2.85 / 1;
+	aspect-ratio: 2.85 / 1;
 }
 
 /* "Afficher plus" */
 .show-more {
-  margin: 20px 0 30px 0;
+	margin: 20px 0 30px 0;
 }
 
 /* || LES PLUS POPULAIRES */
 
 .most-popular {
-  width: initial;
-  border-radius: 0; /* Arrondi bordure */
-  padding: 0 6% 25px 6%;
-  flex-shrink: initial;
+	flex-shrink: initial;
+	border-radius: 0;
+	width: initial;
+	/* Arrondi bordure */
+	padding: 0 6% 25px 6%;
 }
 
 /* "Les plus populaires" */
 .most-popular h2 {
-  margin: 30px 0 7px 0;
+	margin: 30px 0 7px 0;
 }
 
 /* Etoile "Les plus populaires" */
 .most-popular-star {
-  margin: 30px 0 7px 0;
+	margin: 30px 0 7px 0;
 }
 
 .popular-list {
-  margin: 15px 0 0 0;
-  align-items: center;
+	align-items: center;
+	margin: 15px 0 0 0;
 }
 
 /* Encadré blanc card populaire */
 .popular-list a {
-  width: 94%;
-  max-width: 300px;
-  margin: 0 0 8px 0;
-  padding: 5px;
+	margin: 0 0 8px 0;
+	padding: 5px;
+	width: 94%;
+	max-width: 300px;
 }
 
 .popular-image {
-  position: relative;
-  width: 42%;
-  height: initial;
-  aspect-ratio: 0.95 / 1;
-  border-radius: 15px 0 0 15px;
+	position: relative;
+	border-radius: 15px 0 0 15px;
+	width: 42%;
+	height: initial;
+	aspect-ratio: 0.95 / 1;
 }
 
 /* Légende card populaire */
 .popular figcaption {
-  padding: 0 0 0 6%;
+	padding: 0 0 0 6%;
 }
 
 .popular h3 {
-  width: initial;
-  padding: 6% 0 0 0;
+	padding: 6% 0 0 0;
+	width: initial;
 }
 
 /* Note populaire */
 .popular .rating {
-  padding: 3% 0 6% 0;
+	padding: 3% 0 6% 0;
 }
 
 /* || ACTIVITES MARSEILLE */
 
 #activities {
-  padding: 0 6% 0 6%;
+	padding: 0 6% 0 6%;
 }
 
 /* "Activités à Marseille" */
 #activities h2 {
-  margin: 20px 0 7px 0;
+	margin: 20px 0 7px 0;
 }
 
 /* Div avec les cards activités */
 .activities-list {
-  position: initial;
-  aspect-ratio: initial;
-  height: initial;
-  margin: 25px 0 0 0;
-  align-items: center;
+	position: initial;
+	align-items: center;
+	margin: 25px 0 0 0;
+	height: initial;
+	aspect-ratio: initial;
 }
 
 /* Encadré blanc card activité */
 .activities-list a {
-  position: initial;
-  aspect-ratio: initial;
-  width: 94%;
-  max-width: 300px;
-  margin: 0 0 20px 0;
+	position: initial;
+	margin: 0 0 20px 0;
+	width: 94%;
+	max-width: 300px;
+	aspect-ratio: initial;
 }
 
 /* Encadré 2eme card */
 .activities-list a:nth-child(2) {
-  height: initial;
-  aspect-ratio: initial;
+	height: initial;
+	aspect-ratio: initial;
 }
 
 /* Encadré 3eme card */
 .activities-list a:nth-child(3) {
-  height: initial;
-  aspect-ratio: initial;
+	height: initial;
+	aspect-ratio: initial;
 }
 
 /* Encadré 5eme card */
 .activities-list a:nth-child(5) {
-  height: initial;
-  aspect-ratio: initial;
+	height: initial;
+	aspect-ratio: initial;
 }
 
 /* Encadré 6eme card */
 .activities-list a:nth-child(6) {
-  height: initial;
-  aspect-ratio: initial;
+	height: initial;
+	aspect-ratio: initial;
 }
 
 /* Miniature 2eme card */
 .activities-list a:nth-child(2) img {
-  aspect-ratio: 2.49 / 1;
+	aspect-ratio: 2.49 / 1;
 }
 
 /* Miniature 3eme card */
 .activities-list a:nth-child(3) img {
-  aspect-ratio: 2.49 / 1;
+	aspect-ratio: 2.49 / 1;
 }
 
 /* Miniature 5eme card */
 .activities-list a:nth-child(5) img {
-  aspect-ratio: 2.49 / 1;
+	aspect-ratio: 2.49 / 1;
 }
 
 /* Miniature 6eme card */
 .activities-list a:nth-child(6) img {
-  aspect-ratio: 2.49 / 1;
+	aspect-ratio: 2.49 / 1;
 }
 
 /* Miniature card activité */
 .activity img {
-  max-width: 300px;
-  aspect-ratio: 2.49 / 1;
-  flex-grow: 1;
+	flex-grow: 1;
+	max-width: 300px;
+	aspect-ratio: 2.49 / 1;
 }
 
 /* Pour chaque légende de card activité */
 .activity figcaption {
-  margin: 7% 0 5% 6%;
+	margin: 7% 0 5% 6%;
 }
 
 /* || Footer */
 
 .footer-list {
-  width: 90%;
-  padding: 40px 0 0 4%;
-  flex-direction: column;
+	flex-direction: column;
+	padding: 40px 0 0 4%;
+	width: 90%;
 }
 
 .footer-list div {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 /* Tout le contenu de chaque div */
 footer li {
-  margin: 0 0 10px 0;
+	margin: 0 0 10px 0;
 }
 
 /* Titre de liste */
 footer p {
-  margin: 0 0 20px 0;
+	margin: 0 0 20px 0;
 }
