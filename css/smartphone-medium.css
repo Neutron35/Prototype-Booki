@@ -156,8 +156,9 @@ main {
 .lodging-list a {
   width: 71%;
   max-width: 340px;
-  margin: 0 0 12px 0;
+  margin: 0 0 14px 0;
 }
+
 .lodging-image {
   aspect-ratio: 2.85 / 1;
 }
@@ -194,7 +195,7 @@ main {
 .popular-list a {
   width: 71%;
   max-width: 340px;
-  margin: 0 0 8px 0;
+  margin: 0 0 10px 0;
   padding: 5px;
 }
 
@@ -246,14 +247,13 @@ main {
   aspect-ratio: initial;
   width: 71%;
   max-width: 340px;
-  margin: 0 0 20px 0;
+  margin: 0 0 22px 0;
 }
 
 /* Encadré 2eme card */
 .activities-list a:nth-child(2) {
   height: initial;
   aspect-ratio: initial;
-  align-self: initial;
 }
 
 /* Encadré 3eme card */

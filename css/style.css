@@ -449,7 +449,6 @@ main {
   height: initial;
   position: relative;
   aspect-ratio: 1.28 / 1;
-  align-self: flex-start;
 }
 
 /* Encadré 3eme card */

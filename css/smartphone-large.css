@@ -161,7 +161,7 @@ main {
 .lodging-list a {
   width: 48%;
   max-width: 276px;
-  margin: 0 5px 12px 5px;
+  margin: 0 1% 3.5% 1%;
 }
 
 /* "Afficher plus" */
@@ -199,13 +199,14 @@ main {
 .popular-list a {
   width: 48%;
   max-width: 276px;
-  margin: 0 5px 12px 5px;
+  margin: 0 1% 2.5% 1%;
 }
 
 /* Card populaire */
 .popular {
   flex-direction: column;
 }
+
 .popular-image {
   position: relative;
   width: 100%;
@@ -224,6 +225,7 @@ main {
   padding: 4% 0 0 0;
 }
 
+/* Prix populaire */
 .popular .price {
   padding: 1% 0 0 0;
 }
@@ -265,7 +267,6 @@ main {
   margin-bottom: 1.1%;
   position: relative;
   aspect-ratio: 1.28 / 1;
-  align-self: initial;
 }
 
 /* Encadré 3eme card */
@@ -287,11 +288,6 @@ main {
   order: 6;
   position: relative;
   aspect-ratio: 1.44 / 1;
-}
-
-/* Miniature card activité */
-.activity img {
-  max-width: 276px;
 }
 
 /* Pour chaque légende de card activité */

@@ -266,7 +266,6 @@ main {
 .activities-list a:nth-child(2) {
   height: initial;
   aspect-ratio: initial;
-  align-self: initial;
 }
 
 /* Encadré 3eme card */
