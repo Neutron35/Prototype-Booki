@@ -290,8 +290,7 @@ main {
 .lodging-list a {
 	margin: 2% 0 2% 0;
 	border-radius: 20px 20px 20px 20px;
-	box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea,
-		0px -4px 6px #eaeaea;
+	box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 	background-color: #ffffff;
 	padding: 5px;
 	width: 31%;
@@ -376,8 +375,7 @@ main {
 .popular-list a {
 	margin: 0 0 8% 0;
 	border-radius: 20px 20px 20px 20px;
-	box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea,
-		0px -4px 6px #eaeaea;
+	box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 	background-color: #ffffff;
 	padding: 5px;
 }
@@ -444,8 +442,7 @@ main {
 .activities-list a {
 	position: relative;
 	border-radius: 20px 20px 20px 20px;
-	box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea,
-		0px -4px 6px #eaeaea;
+	box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 	background-color: #ffffff;
 	width: 22.7%;
 	height: 100%;
