@@ -43,7 +43,6 @@ header li {
 	width: initial;
 }
 
-/* Bordure devient bleu quand la souris passe sur le li */
 header li:hover {
 	border-bottom: initial;
 }
@@ -78,8 +77,8 @@ main {
 
 .search-button {
 	flex-shrink: 0;
-	margin: 0 0 0 0;
 	border-radius: 0 20px 20px 0;
+	margin: 0 0 0 0;
 }
 
 /* || FILTRES ET RESULTATS */
@@ -100,8 +99,8 @@ main {
 
 /* Logo filtre */
 .filters .fa-solid {
-	width: 40px;
 	height: 40px;
+	width: 40px;
 }
 
 /* Intitulé filtre */
@@ -110,7 +109,7 @@ main {
 	font-size: 17px;
 }
 
-/* Dimensions de la div avec logo + phrase */
+/* Div avec logo + phrase */
 .results {
 	align-items: initial;
 	margin: 20px 0 0 0;
@@ -118,8 +117,8 @@ main {
 
 .fa-info {
 	flex-shrink: 0;
-	width: 20px;
 	height: 20px;
+	width: 20px;
 }
 
 /* Div hébergements et populaires */
@@ -143,7 +142,6 @@ main {
 	border-radius: initial;
 	background-color: initial;
 	width: initial;
-	/* Arrondi bordure */
 	padding: 0 6% 0 6%;
 }
 
@@ -154,16 +152,16 @@ main {
 
 .lodging-list {
 	flex-direction: row;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	margin: 15px 0 0 0;
 }
 
 /* Encadré blanc card hébergement */
 .lodging-list a {
 	margin: 0 5px 12px 5px;
-	width: 32%;
 	max-width: 276px;
+	width: 32%;
 }
 
 /* "Afficher plus" */
@@ -175,9 +173,8 @@ main {
 
 .most-popular {
 	flex-shrink: initial;
-	border-radius: 0;
+	border-radius: initial;
 	width: initial;
-	/* Arrondi bordure */
 	padding: 0 6% 25px 6%;
 }
 
@@ -193,16 +190,16 @@ main {
 
 .popular-list {
 	flex-direction: row;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	margin: 15px 0 0 0;
 }
 
 /* Encadré blanc card populaire */
 .popular-list a {
 	margin: 0 5px 12px 5px;
-	width: 32%;
 	max-width: 276px;
+	width: 32%;
 }
 
 /* Card populaire */
@@ -213,14 +210,14 @@ main {
 .popular-image {
 	position: relative;
 	border-radius: 15px 15px 0 0;
-	width: 100%;
 	height: initial;
+	width: 100%;
 	aspect-ratio: 2.07 / 1;
 }
 
 .popular h3 {
-	padding: 4% 0 0 0;
 	width: initial;
+	padding: 4% 0 0 0;
 }
 
 /* Prix populaire */
@@ -251,8 +248,8 @@ main {
 
 /* Encadré blanc card activité */
 .activities-list a {
-	width: 23.5%;
 	height: initial;
+	width: 23.5%;
 }
 
 /* Pour chaque légende de card activité */
@@ -265,8 +262,8 @@ main {
 .footer-list {
 	flex-direction: row;
 	justify-content: space-between;
-	padding-right: 10%;
 	width: 90%;
+	padding-right: 10%;
 }
 
 .footer-list div {

@@ -32,7 +32,6 @@ header li {
 	width: initial;
 }
 
-/* Bordure devient bleu quand la souris passe sur le li */
 header li:hover {
 	border-bottom: initial;
 }
@@ -67,8 +66,8 @@ main {
 
 .search-button {
 	flex-shrink: 0;
-	margin: 0 0 0 0;
 	border-radius: 0 20px 20px 0;
+	margin: 0 0 0 0;
 }
 
 /* || FILTRES ET RESULTATS */
@@ -89,8 +88,8 @@ main {
 
 /* Logo filtre */
 .filters .fa-solid {
-	width: 40px;
 	height: 40px;
+	width: 40px;
 }
 
 /* Intitulé filtre */
@@ -99,7 +98,7 @@ main {
 	font-size: 17px;
 }
 
-/* Dimensions de la div avec logo + phrase */
+/* Div avec logo + phrase */
 .results {
 	align-items: initial;
 	margin: 20px 0 0 0;
@@ -107,8 +106,8 @@ main {
 
 .fa-info {
 	flex-shrink: 0;
-	width: 20px;
 	height: 20px;
+	width: 20px;
 }
 
 /* Div hébergements et populaires */
@@ -142,8 +141,8 @@ main {
 
 .lodging-list {
 	flex-direction: row;
-	align-items: center;
 	justify-content: space-around;
+	align-items: center;
 	margin: 4% auto 0 auto;
 	max-width: 762px;
 }
@@ -151,8 +150,8 @@ main {
 /* Encadré blanc card hébergement */
 .lodging-list a {
 	margin: 0 1% 5% 1%;
-	width: 41%;
 	max-width: 312px;
+	width: 41%;
 }
 
 /* "Afficher plus" */
@@ -181,8 +180,8 @@ main {
 
 .popular-list {
 	flex-direction: row;
-	align-items: center;
 	justify-content: space-around;
+	align-items: center;
 	margin: 4% auto 0 auto;
 	max-width: 762px;
 }
@@ -190,8 +189,8 @@ main {
 /* Encadré blanc card populaire */
 .popular-list a {
 	margin: 0 1% 5% 1%;
-	width: 41%;
 	max-width: 312px;
+	width: 41%;
 }
 
 /* Card populaire */
@@ -202,8 +201,8 @@ main {
 .popular-image {
 	position: relative;
 	border-radius: 15px 15px 0 0;
-	width: 100%;
 	height: initial;
+	width: 100%;
 	aspect-ratio: 2.07 / 1;
 }
 
@@ -213,8 +212,8 @@ main {
 }
 
 .popular h3 {
-	padding: 4% 0 0 0;
 	width: initial;
+	padding: 4% 0 0 0;
 }
 
 /* Prix populaire */
@@ -248,37 +247,37 @@ main {
 
 /* Encadré blanc card activité */
 .activities-list a {
-	width: calc(41% - 10px);
-	max-width: 302px;
 	height: initial;
+	max-width: 302px;
+	width: calc(41% - 10px);
 }
 
 /* Encadré 2eme card */
 .activities-list a:nth-child(2) {
-	position: relative;
 	order: 3;
+	position: relative;
 	margin-bottom: 1.1%;
 	aspect-ratio: 1.28 / 1;
 }
 
 /* Encadré 3eme card */
 .activities-list a:nth-child(3) {
-	position: relative;
 	order: 4;
+	position: relative;
 	aspect-ratio: 1.84 / 1;
 }
 
 /* Encadré 5eme card */
 .activities-list a:nth-child(5) {
-	position: relative;
 	order: 5;
+	position: relative;
 	aspect-ratio: 1.55 / 1;
 }
 
 /* Encadré 6eme card */
 .activities-list a:nth-child(6) {
-	position: relative;
 	order: 6;
+	position: relative;
 	aspect-ratio: 1.44 / 1;
 }
 
@@ -292,8 +291,8 @@ main {
 .footer-list {
 	flex-direction: row;
 	justify-content: space-between;
-	padding-right: 10%;
 	width: 90%;
+	padding-right: 10%;
 }
 
 .footer-list div {

@@ -1,13 +1,12 @@
 /* || STYLE GENERAL */
 
 * {
-	box-sizing: border-box;
 	margin: 0;
+	box-sizing: border-box;
 	padding: 0;
 }
-a,
-a:focus,
-a:active {
+
+a, a:focus, a:active {
 	text-decoration: none;
 	color: #000000;
 }
@@ -21,13 +20,16 @@ h1 {
 h2 {
 	font-size: 20px;
 }
+
 /* Pour chaque titre de card */
 h3 {
 	font-size: 14px;
 }
+
 ul {
 	list-style-type: none;
 }
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -54,43 +56,39 @@ body {
 	display: flex;
 	justify-content: space-between;
 	width: 68px;
-	color: #0065fc;
 	font-size: 11px;
+	color: #0065fc;
 }
 
 /* || HEADER */
 
 header {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-between;	/* Pour avoir le logo tout à gauche et le nav tout à droite */
 	margin: 0 auto 0 auto;
 	max-width: 1340px;
-	/* Pour avoir le logo tout à gauche et le nav tout à droite */
 	width: 93%;
 }
 
 /* Logo */
 header img {
 	margin: 34px 0 0 3%;
-	width: 95.5px;
 	height: 45px;
+	width: 95.5px;
 }
 
 header ul {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-around;	/* Chaque élément de la liste est réparti équitablement. Un espace est appliqué à chaque extrémité. */
+	align-items: baseline; /* On aligne en bas */
+	margin: 0;
 	padding: 0;
 	font-size: 16px;
-	/* Chaque élément de la liste est réparti équitablement. Un espace est appliqué à chaque extrémité. */
-	align-items: baseline;
-	/* On aligne en bas */
-	margin: 0;
 }
 
 header li {
-	padding: 45px 22px 0px 22px;
-	/* Permet d'avoir la bordure tout en haut */
-	border-top: 2px solid transparent;
+	border-top: 2px solid transparent; /* Evite le décalage du texte lors du hover */
+	padding: 45px 22px 0px 22px; /* Permet d'avoir la bordure tout en haut */
 }
 
 /* Bordure devient bleu quand la souris passe sur le li */
@@ -105,10 +103,10 @@ header li:hover a {
 
 /* || MAIN */
 main {
-	flex: 1 0 auto;
 	margin: 2% auto 4% auto;
-	width: 93%;
 	max-width: 1340px;
+	width: 93%;
+	flex: 1 0 auto;
 }
 
 /* "En plein centre ville..." */
@@ -126,40 +124,37 @@ main {
 
 .fa-location-dot {
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	border-top-left-radius: 20px 20px;
-	border-bottom-left-radius: 20px 20px;
+	align-items: center;
 	background-color: #f2f2f2;
-	width: 50px;
 	height: 50px;
+	width: 50px;
 	font-size: 16px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 
 /* Champ de recherche */
 .search {
+	border: 0px;
 	border-top: 1px solid #f2f2f2;
 	border-bottom: 1px solid #f2f2f2;
-	padding: 0 0 0 16px;
-	width: 236px;
 	height: 50px;
+	width: 236px;
+	padding: 0 0 0 16px; /* On se décale un peu de la gauche */
 	font-size: 16px;
 	font-weight: bold;
-	/* On se décale un peu de la gauche */
-	border: 0px;
 }
 
 .search-button {
 	border: 0px solid;
-	border-top-right-radius: 20px 20px;
+	background-color: #0065fc;
 	width: 130px;
-	color: #ffffff;
 	font-size: 16px;
 	font-weight: bold;
-	/* On arrondit l'angle supérieur droit */
-	border-bottom-right-radius: 20px 20px;
-	/* On arrondit l'angle inférieur droit */
-	background-color: #0065fc;
+	color: #ffffff;
+	border-top-right-radius: 20px;  /* On arrondit l'angle supérieur droit */
+	border-bottom-right-radius: 20px;	/* On arrondit l'angle inférieur droit */
 }
 
 .search-button:before {
@@ -170,52 +165,48 @@ main {
 
 .filters-results {
 	margin: 0 0 0 1%;
-	max-width: 929px;
 	height: 112px;
+	max-width: 929px;
 }
 
 .filters-list {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap; 	/* Permettre à la phrase de revenir à la ligne */
 	margin: 2% 0 0 9px;
-	/* Permettre à la phrase de revenir à la ligne */
-	flex-wrap: wrap;
 }
 
 /* "Filtres" */
 .filters-list span {
-	font-weight: bold;
-	/* "Filtres" en gras */
 	font-size: 17px;
+	font-weight: bold; /* "Filtres" en gras */
 }
 
 /* Chaque filtre */
 .filters {
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
-	margin: 5px 0 5px 30px;
+	align-items: center;
 	border: 2px solid #d9d9d9;
 	border-left: 0px;
-	border-radius: 100px 100px 100px 100px;
+	border-radius: 100px 100px 100px 100px; /* On arrondit les coins */
+	margin: 5px 0 5px 30px;
 	background-color: #ffffff;
-	color: #000000;
-	/* On arrondit les coins */
 	font-weight: bold;
+	color: #000000;
 }
 
 /* Logo filtre */
 .filters .fa-solid {
 	display: flex;
-	align-items: center;
 	justify-content: center;
-	border-radius: 100px 100px 100px 100px;
+	align-items: center;
+	border-radius: 50%; /* Cercle */
 	background-color: #deebff;
-	width: 50px;
 	height: 45px;
-	color: #0065fc;
-	/* Cercle */
+	width: 50px;
 	font-size: 17px;
+	color: #0065fc;
 }
 
 .filters:hover {
@@ -242,15 +233,14 @@ main {
 
 .fa-info {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	border: 1px solid #d9d9d9;
-	border-radius: 100px 100px 100px 100px;
-	width: 24px;
+	border-radius: 50%; /* Cercle */
 	height: 24px;
-	color: #0065fc;
-	/* Cercle */
+	width: 24px;
 	font-size: 12px;
+	color: #0065fc;
 }
 
 /* Phrase nombre de résultats */
@@ -268,10 +258,10 @@ main {
 /* || HEBERGEMENTS MARSEILLE */
 
 #lodgings {
-	border-radius: 20px 20px 20px 20px;
+	border-radius: 20px;
 	background-color: #f2f2f2;
-	padding: 0 3% 0 3%;
 	width: 65%;
+	padding: 0 3% 0 3%;
 }
 
 /* "Hébergements à Marseille" */
@@ -282,18 +272,18 @@ main {
 
 .lodging-list {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 /* Encadré blanc card hébergement */
 .lodging-list a {
+	border-radius: 20px;
 	margin: 2% 0 2% 0;
-	border-radius: 20px 20px 20px 20px;
-	box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 	background-color: #ffffff;
-	padding: 5px;
 	width: 31%;
+	padding: 5px;
+	box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 }
 
 /* Card hébergement */
@@ -309,8 +299,8 @@ main {
 	position: relative;
 	border-radius: 15px 15px 0 0;
 	width: 100%;
-	aspect-ratio: 2.07 / 1;
 	object-fit: cover;
+	aspect-ratio: 2.07 / 1;
 }
 
 .lodging figcaption {
@@ -344,10 +334,10 @@ main {
 
 .most-popular {
 	flex-shrink: 2;
-	border-radius: 20px 20px 20px 20px;
+	border-radius: 20px;
 	background-color: #f2f2f2;
-	padding: 0 3% 0 3%;
 	width: 31%;
+	padding: 0 3% 0 3%;
 }
 
 /* "Les plus populaires" */
@@ -358,26 +348,26 @@ main {
 
 /* Etoile "Les plus populaires" */
 .most-popular-star {
-	float: right;
 	margin: 35px 0 7px 0;
+	float: right;
 	font-size: 20px;
 }
 
 .popular-list {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin: 5% 0 0 0;
 }
 
 /* Encadré blanc card populaire */
 .popular-list a {
+	border-radius: 20px;
 	margin: 0 0 8% 0;
-	border-radius: 20px 20px 20px 20px;
-	box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 	background-color: #ffffff;
 	padding: 5px;
+	box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 }
 
 /* Card populaire */
@@ -391,17 +381,17 @@ main {
 	position: relative;
 	border-radius: 15px 0 0 15px;
 	width: 37%;
-	aspect-ratio: 0.95 / 1;
 	object-fit: cover;
+	aspect-ratio: 0.95 / 1;
 }
 
 /* Légende card populaire */
 .popular figcaption {
 	display: flex;
-	flex: 1;
 	flex-direction: column;
 	justify-content: flex-end;
 	padding: 0 0 0 4%;
+	flex: 1;
 }
 
 .popular h3 {
@@ -428,12 +418,12 @@ main {
 
 /* Div avec les cards activités */
 .activities-list {
-	display: flex;
 	position: relative;
+	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: flex-start;
 	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
 	margin: 25px 0 0 0;
 	aspect-ratio: 3.01 / 1;
 }
@@ -441,11 +431,11 @@ main {
 /* Encadré blanc card activité */
 .activities-list a {
 	position: relative;
-	border-radius: 20px 20px 20px 20px;
-	box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
+	border-radius: 20px;
 	background-color: #ffffff;
-	width: 22.7%;
 	height: 100%;
+	width: 22.7%;
+	box-shadow: 8px 0px 6px #eaeaea, 0px 8px 6px #eaeaea, -4px 0px 6px #eaeaea, 0px -4px 6px #eaeaea;
 	aspect-ratio: 0.68 / 1;
 }
 
@@ -513,8 +503,8 @@ main {
 	position: relative;
 	border-radius: 20px 20px 0 0;
 	width: 100%;
-	aspect-ratio: 0.78 / 1;
 	object-fit: cover;
+	aspect-ratio: 0.78 / 1;
 }
 
 /* Pour chaque légende de card activité */
@@ -523,6 +513,7 @@ main {
 }
 
 /* || Footer */
+
 footer {
 	flex-shrink: 0;
 	background-color: #f2f2f2;
@@ -532,9 +523,9 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto 0 auto;
-	padding: 3% 25% 4% 0;
-	width: 93%;
 	max-width: 1340px;
+	width: 93%;
+	padding: 3% 25% 4% 0;
 }
 
 /* Tout le contenu de chaque div */

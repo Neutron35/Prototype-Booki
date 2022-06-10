@@ -27,20 +27,18 @@ nav {
 
 header ul {
 	justify-content: initial;
-	text-align: center;
 	align-items: initial;
+	text-align: center;
 }
 
 header li {
-	padding: 0 0 10px 0;
-	width: 50%;
-	/* Permet d'avoir la bordure tout en haut */
 	border-top: 0;
-	/* Evite le décalage du texte lors du hover */
 	border-bottom: 4px solid #f2f2f2;
+	width: 50%;
+	padding: 0 0 10px 0;
 }
 
-/* Bordure devient bleu quand la souris passe sur le li */
+/* Bordure du dessous devient bleu quand la souris passe sur le li */
 header li:hover {
 	border-top: 0;
 	border-bottom: 4px solid #0065fc;
@@ -67,27 +65,17 @@ main {
 .fa-location-dot {
 	flex-shrink: 0;
 	border-radius: 15px 0 0 15px;
-	width: 45px;
-	height: 45px;
 }
 
 /* Champ de recherche */
 .search {
 	min-width: 180px;
-	height: 45px;
 }
 
 .search-button {
 	flex-shrink: 0;
+	border-radius: 0 20px 20px 0;
 	margin: 0 0 0 0;
-	border-radius: 15px 15px 15px 15px;
-	width: 45px;
-	font-weight: initial;
-}
-
-.search-button:before {
-	font-family: fontAwesome;
-	content: "\f002";
 }
 
 /* || FILTRES ET RESULTATS */
@@ -108,8 +96,8 @@ main {
 
 /* Logo filtre */
 .filters .fa-solid {
-	width: 40px;
 	height: 40px;
+	width: 40px;
 }
 
 /* Intitulé filtre */
@@ -118,7 +106,7 @@ main {
 	font-size: 17px;
 }
 
-/* Dimensions de la div avec logo + phrase */
+/* Div avec logo + phrase */
 .results {
 	align-items: initial;
 	margin: 20px 0 0 0;
@@ -126,8 +114,8 @@ main {
 
 .fa-info {
 	flex-shrink: 0;
-	width: 20px;
 	height: 20px;
+	width: 20px;
 }
 
 /* Div hébergements et populaires */
@@ -151,7 +139,6 @@ main {
 	border-radius: initial;
 	background-color: initial;
 	width: initial;
-	/* Arrondi bordure */
 	padding: 0 6% 0 6%;
 }
 
@@ -168,9 +155,9 @@ main {
 
 /* Encadré blanc card hébergement */
 .lodging-list a {
-	margin: 0 0 12px 0;
-	width: 94%;
-	max-width: 300px;
+	margin: 0 0 14px 0;
+	max-width: 340px;
+	width: 71%;
 }
 
 .lodging-image {
@@ -188,7 +175,6 @@ main {
 	flex-shrink: initial;
 	border-radius: 0;
 	width: initial;
-	/* Arrondi bordure */
 	padding: 0 6% 25px 6%;
 }
 
@@ -209,17 +195,17 @@ main {
 
 /* Encadré blanc card populaire */
 .popular-list a {
-	margin: 0 0 8px 0;
+	margin: 0 0 10px 0;
+	max-width: 340px;
+	width: 71%;
 	padding: 5px;
-	width: 94%;
-	max-width: 300px;
 }
 
 .popular-image {
 	position: relative;
 	border-radius: 15px 0 0 15px;
-	width: 42%;
 	height: initial;
+	width: 42%;
 	aspect-ratio: 0.95 / 1;
 }
 
@@ -230,7 +216,6 @@ main {
 
 .popular h3 {
 	padding: 6% 0 0 0;
-	width: initial;
 }
 
 /* Note populaire */
@@ -239,7 +224,6 @@ main {
 }
 
 /* || ACTIVITES MARSEILLE */
-
 #activities {
 	padding: 0 6% 0 6%;
 }
@@ -261,9 +245,9 @@ main {
 /* Encadré blanc card activité */
 .activities-list a {
 	position: initial;
-	margin: 0 0 20px 0;
-	width: 94%;
-	max-width: 300px;
+	margin: 0 0 22px 0;
+	max-width: 340px;
+	width: 71%;
 	aspect-ratio: initial;
 }
 
@@ -314,7 +298,7 @@ main {
 /* Miniature card activité */
 .activity img {
 	flex-grow: 1;
-	max-width: 300px;
+	max-width: 340px;
 	aspect-ratio: 2.49 / 1;
 }
 
@@ -327,8 +311,8 @@ main {
 
 .footer-list {
 	flex-direction: column;
-	padding: 40px 0 0 4%;
 	width: 90%;
+	padding: 40px 0 0 4%;
 }
 
 .footer-list div {
