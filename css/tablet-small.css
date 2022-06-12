@@ -9,7 +9,6 @@
 /* || HEADER */
 
 header {
-	flex-direction: row;
 	align-items: initial;
 }
 
@@ -140,7 +139,6 @@ main {
 }
 
 .lodging-list {
-	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	margin: 4% auto 0 auto;
@@ -289,7 +287,6 @@ main {
 /* || Footer */
 
 .footer-list {
-	flex-direction: row;
 	justify-content: space-between;
 	width: 90%;
 	padding-right: 10%;
