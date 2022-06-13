@@ -248,6 +248,7 @@ main {
 /* Div avec les cards activités */
 .activities-list {
 	position: initial;
+	align-content: initial;
 	align-items: center;
 	margin: 25px 0 0 0;
 	height: initial;
