@@ -189,7 +189,7 @@ main {
 	align-items: center;
 	border: 2px solid #d9d9d9;
 	border-left: 0px;
-	border-radius: 100px 100px 100px 100px; /* On arrondit les coins */
+	border-radius: 100px; /* On arrondit les coins */
 	margin: 5px 0 5px 30px;
 	background-color: #ffffff;
 	font-weight: bold;
@@ -395,6 +395,7 @@ main {
 }
 
 .popular h3 {
+	width: 80%;
 	padding: 4% 0 0 0;
 }
 
