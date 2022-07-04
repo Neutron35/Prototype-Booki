@@ -30,6 +30,6 @@ Le prototype réalisé est donc une page web responsive :
 * adaptée aux ordinateurs, tablettes et smartphones
 * pré-optimisée au niveau performances, accessibilité et SEO
 
-## Visualisation en live
+## Démo
 
 [Link](https://neutron35.github.io/Prototype-Booki/)
