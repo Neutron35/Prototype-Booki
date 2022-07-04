@@ -32,4 +32,4 @@ Le prototype réalisé est donc une page web responsive :
 
 ## Démo
 
-[Link](https://neutron35.github.io/Prototype-Booki/)
+[Cliquez ici pour visualiser le prototype](https://neutron35.github.io/Prototype-Booki/)
